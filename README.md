@@ -1,2 +1,6 @@
-# 前端
-1. [如何关闭浏览器的同源策略？](./docs/disable-same-origin-policy.md)
+# hello
+
+Notes for everything.
+
+1. [Chrome](./docs/chrome.md)
+2. [CSS](./docs/css.md)

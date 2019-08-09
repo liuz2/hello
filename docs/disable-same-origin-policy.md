@@ -3,4 +3,7 @@
 ```sh
 # chrome
 chrome --disable-web-security --user-data-dir
+
+# or
+alias chrome-debug="chrome --disable-web-security --user-data-dir"
 ```
