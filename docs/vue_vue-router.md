@@ -328,6 +328,26 @@ const router = new VueRouter({
 })
 ```
 
+## HTML5 历史模式
+
+`vue-router` 默认使用 hash 模式，也可以改为 history 模式：
+
+```js
+const router = new VueRouter({
+    mode: 'history',
+    routes: [...],
+});
+```
+
+服务器设置
+
+```
+# nginx
+location / {
+	try_files: $uri $uri/ /index.html;
+}
+```
+
 
 
 ## REF
