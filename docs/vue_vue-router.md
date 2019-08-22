@@ -348,8 +348,165 @@ location / {
 }
 ```
 
+## 导航守卫
+
+`vue-router` 提供的导航守卫主要用来重定向或取消跳转。
+
+### 全局前置守卫
+
+使用 `router.beforeEach` 注册全局前置守卫。
+
+```js
+const router = new VueRouter({ ... })
+
+router.beforeEach((to, from, next) => {
+    // ...
+})
+```
+
+每个守卫函数接收三个参数：
+
+1. `to: Route` 目标 Route 对象
+1. `from: Route` 当前 Route 对象
+1. `next: Function` 必须调用 next 后，才能完整解析钩子函数。后续导航行为取决于传入 `next` 的参数。
+
+`next()` 函数有以下行为：
+
+1. `next()` 进入流水线的下个钩子函数。若已抵达流水线末端，导航被确认。
+1. `next(false)` 中止当前导航。
+1. `next('/')` 或 `next({ path: '/' })` 跳向不同地址。可以传递的参数包括：`replace: true`, `name: 'home'` 等。
+1. `next(error)` （2.4.0+），导航中止，错误实例传入 `router.onError()`。
+
+**一定要调用 `next` 函数，否则页面无法跳转。**
+
+### 全局解析守卫（Global Resolve Guards）
+
+使用 `router.beforeResolve`。
+
+### 全局后置钩子
+
+钩子与守卫不同，没有 `next` 函数，无法改变路由。
+
+```js
+router.afterEach((to, from) => {
+    // ...
+})
+```
+
+### 单路由守卫
+
+在每个路由的配置对象中，可以定义 `beforeEnter` 守卫。
+
+```js
+const router = new VueRouter({
+    routes: [
+        {
+            path: '/foo',
+            component: Foo,
+            beforeEnter: (to, from, next) => {
+                // ...
+            }
+        }
+    ],
+});
+```
+
+### 组件內守卫
+
+可以在路由组件内部定义路由导航守卫。常用的函数有：
+
+1. `beforeRouteEnter`
+1. `beforeRouteUpdate`
+1. `beforeRouteLeave`
+
+```js
+const Foo = {
+    template: `...`,
+    beforeRouteEnter (to, from, next) {
+        // 渲染该组件路由前执行，无法调用 `this` 实例
+    },
+    beforeRouteUpdate (to, from, next) {
+        // 当渲染一个组件的路由变化时，同时会复用该组件
+        // 比如，`/foo/1` 跳转至 `/foo/2`
+    },
+    beforeRouteLeave (to, from, next) {
+        // 路由离开时执行
+    },
+}
+```
+
+`beforeRouteEnter` 无法获取 `this` 参数，但是可以通过回调函数获取 vm 实例。
+
+```js
+beforeRouteEnter (to, from, next) {
+    next(vm => {
+        // access to component instance via `vm`
+    })
+}
+```
+
+### 完整的导航流程
+
+1. 导航触发
+2. 在非活跃组件中调用 leave 守卫
+3. 调用全局 `beforeEach` 守卫
+4. 在复用组件调用 `beforeRouteUpdate` 守卫
+5. 执行路由配置中的 `beforeEnter` 函数
+6. 解析异步路由组件
+7. 在激活组件中执行 `beforeRouteEnter` 守卫
+8. 执行全局的 `beforeResolve` 守卫
+9. 导航确认
+10. 执行全局 `afterEach` 钩子
+11. 触发 DOM 更新
+12. 在实例化的 vue 中执行 `beforeRouteEnter` 的 `next` 中的回调函数
+
+## 路由元数据
+
+可以在定义路由时增加 `meta` 字段
+
+```js
+const router = new VueRouter({
+    routes: [
+        {
+            path: '/foo',
+            component: Foo,
+            children: [
+                {
+                    path: 'bar',
+                    component: Bar,
+                    meta: {
+                        requiresAuth: true,
+                    },
+                }
+            ]
+        }
+    ]
+})
+```
+
+`routes` 配置的每一项都称作 **路由记录**，路由记录可嵌套。因此，当匹配到一个路由时，可能会对应多个路由记录。
+
+比如，对于 `/foo/bar` 将匹配父路由记录和子路由记录。所有匹配的路由记录都在 `$route。matched` 数组中，因此需要遍历 `$route.matched` 以便检查 meta 字段。
+
+```js
+router.beforeEach((to, from, next) => {
+    if (to.matched.some(record => record.meta.requiresAuth)) {
+        if (!auth.loggedIn()) {
+            next({
+                path: '/login',
+                query: { redirect: to.fullPath },
+            });
+        } else {
+            next();
+        }
+    } else {
+        next();
+    }
+})
+```
 
 
 ## REF
 
 1. [Vue Router]([https://router.vuejs.org](https://router.vuejs.org/))
+1. [Navigation Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html)
