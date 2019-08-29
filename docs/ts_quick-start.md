@@ -48,7 +48,24 @@ document.body.textContent = greeter(user);
 
 ## 类
 
-[To Be Continued](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html#classes)
+构造函数参数的 `public` 修饰符，是一个快捷方式，可以自动创建同名属性。
+
+```ts
+var Student = /** @class */ (function () {
+    function Student(firstName, middleInitial, lastName) {
+        this.firstName = firstName;
+        this.middleInitial = middleInitial;
+        this.lastName = lastName;
+        this.fullName = firstName + ' ' + middleInitial + ' ' + lastName;
+    }
+    return Student;
+}());
+function greeter(person) {
+    return 'Hello, ' + person.firstName + ' ' + person.lastName;
+}
+var user = new Student('Jane', 'M.', 'User');
+document.body.textContent = greeter(user);
+```
 
 ## REF
 
