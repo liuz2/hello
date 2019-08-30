@@ -8,6 +8,8 @@ Notes for everything.
 1. [Docker](./docs/docker.md)
 1. [ESLint](./docs/eslint.md)
 1. [Git](./docs/git.md)
+1. [GNU Make](./docs/gmake.md)
+1. [Nginx](./docs/nginx.md)
 1. [Npm](./docs/npm.md)
 1. [JavaScript](./docs/javascript.md)
 1. [SQL](./docs/sql.md)
