@@ -11,6 +11,7 @@ Notes for everything.
 1. [ESLint](./docs/eslint.md)
 1. [Git](./docs/git.md)
 1. [GNU Make](./docs/gmake.md)
+1. [Go](./docs/go.md)
 1. [Nginx](./docs/nginx.md)
 1. [Node](./docs/node.md)
 1. [Npm](./docs/npm.md)
