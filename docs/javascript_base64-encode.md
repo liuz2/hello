@@ -5,11 +5,17 @@
 > b 代表字符串 binary string，a 代表 base64 编码（ASCII 码）
 
 ```js
-btoa('Hello, World!')
+window.btoa('Hello, World!')
 // => "SGVsbG8sIFdvcmxkIQ=="
-atob('SGVsbG8sIFdvcmxkIQ==')
+window.atob('SGVsbG8sIFdvcmxkIQ==')
 // => "Hello, World!"
 ```
+
+## 兼容性
+
+[caniuse](https://caniuse.com/#search=btoa)
+
+IE 10+ 基本都支持 `window.atob()` 和 `window.btoa()`。
 
 ## REF
 
