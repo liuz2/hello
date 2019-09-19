@@ -245,7 +245,9 @@ const router = new VueRouter({
 
 ## 重定向和别名
 
-### 重定向
+### [重定向](https://router.vuejs.org/guide/essentials/redirect-and-alias.html#redirect)
+
+如果要将 `/a` 重定向到 `/b`：
 
 ```js
 const router = new VueRouter({
