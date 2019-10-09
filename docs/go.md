@@ -2,6 +2,7 @@
 
 1. [常见的 Go 命令行工具](./go_cli.md)
 1. [如何编写最简单的 Go 语言](./go_hello-world.md)
+1. [Github 镜像](./go_github-mirror.md)
 1. [如何使用 for 循环？](./go_for-loop.md)
 1. [如何使用 for ... range 循环？](./go_for-range.md)
 1. [如何打印命令行参数](./go_command-line-arguments.md)
