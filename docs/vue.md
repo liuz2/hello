@@ -5,3 +5,4 @@
 1. [如何自定义组件的 `v-model` 属性？](./vue_custom-v-model.md)
 1. [Vue 的生命周期有哪些？](./vue_lifecycle.md)
 1. [如何使用 Vuex?](./vue_vuex-usage.md)
+1. [Vue Composition API RFC 是什么？](./vue_composition-api-rfc.md)
