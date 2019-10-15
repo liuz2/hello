@@ -21,3 +21,4 @@ Notes for everything.
 1. [SQL](./docs/sql.md)
 1. [TypeScript](./docs/typescript.md)
 1. [Vue](./docs/vue.md)
+1. [WebAssembly](./docs/webassembly.md)
