@@ -2,11 +2,11 @@
 
 ## [Access Token](https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Get_access_token.html)
 
-> access_token 是公众号的全局唯一接口调用凭据，公众号调用各接口时都需使用access_token。开发者需要进行妥善保存。access_token 的存储至少要保留 512 个字符空间。access_token 的有效期目前为 2 个小时，需定时刷新，重复获取将导致上次获取的access_token 失效。
+> access_token 是公众号的全局唯一接口调用凭据，公众号调用各接口时都需使用 access_token。开发者需要进行妥善保存。access_token 的存储至少要保留 512 个字符空间。access_token 的有效期目前为 2 个小时，需定时刷新，重复获取将导致上次获取的 access_token 失效。
 
 获取方法
 
-```http
+```
 GET https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
 ```
 
@@ -19,8 +19,8 @@ GET https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=A
 参数释义
 
 - `grant_type` 获取 access_token 填写 `client_credential`
-- appid 第三方用户唯一凭证
-- secret 第三方用户唯一凭证密钥，即 `appsecret`
+- `appid` 第三方用户唯一凭证
+- `secret` 第三方用户唯一凭证密钥，即 `appsecret`
 
 ## [jsapi_ticket](https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html#62)
 
@@ -28,7 +28,7 @@ GET https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=A
 
 获取方式
 
-```http
+```
 GET https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=ACCESS_TOKEN&type=jsapi
 ```
 
