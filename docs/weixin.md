@@ -1,6 +1,7 @@
 # 微信
 
 1. [微信的参数及其获取方式](./weixin_params-define-and-retrieve.md)
+1. [微信小程序的参数及其获取方式](./weixin_app-params-define-and-retrieve.md)
 
 ## REF
 
