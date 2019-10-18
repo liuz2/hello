@@ -12,3 +12,4 @@
 
 1. [Vue.js](https://vuejs.org)
 1. [Vue CLI](https://cli.vuejs.org)
+1. [vuejs/vue-devtools](https://github.com/vuejs/vue-devtools)
