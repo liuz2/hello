@@ -8,6 +8,7 @@
 
 1. [微信小程序的参数及其获取方式](./weixin_app-params-define-and-retrieve.md)
 1. [如何使用 slot 插槽？](./weixin_app-slot.md)
+1. [如何获取用户微信绑定的手机号？](./weixin_app-get-phone.md)
 
 ## REF
 
