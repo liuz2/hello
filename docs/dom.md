@@ -7,6 +7,7 @@ DOM 的意义在于提供了一整套 JavaScript 接口，用来对文档进行�
 1. [如何查看 Node 的所有类型？](./dom_node-types.md)
 1. [offsetLeft 和 offsetTop 表示什么？](./dom_offsetleft-offsettop.md)
 1. [如何获取元素相对视图的位置？](./dom_getboundingclientrect.md)
+1. [元素的尺寸如何定义？](./dom_element-size.md)
 
 ## REF
 
