@@ -11,6 +11,7 @@
 1. [如何获取用户微信绑定的手机号？](./weixin_app-get-phone.md)
 1. [如何使用自定义组件的事件？](./weixin_app-custom-event.md)
 1. [如何跳转到其他微信小程序？](./weixin_app-jump-mini-program.md)
+1. [特性兼容性表格](./weixin_app-compatible-table.md)
 
 ## REF
 
