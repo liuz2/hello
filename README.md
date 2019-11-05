@@ -12,6 +12,7 @@ Notes for everything.
 1. [Docker](./docs/docker.md)
 1. [DOM](./docs/dom.md)
 1. [ESLint](./docs/eslint.md)
+1. [Firefox](./docs/firefox.md)
 1. [Git](./docs/git.md)
 1. [GNU Make](./docs/gmake.md)
 1. [Go](./docs/go.md)

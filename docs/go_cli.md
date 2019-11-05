@@ -4,6 +4,7 @@
 
 1. `go build` 编译代码包及其依赖
 1. `go clean` 删除 object 文件
+1. `godoc -http=:8080` 在 `localhost:8080` 浏览包内容
 1. `go doc` 显示包或者 symbol 的文档
 1. `go env` 显示 Go 环境变量信息
 1. `go fix` 改写旧版本 API 为新版
