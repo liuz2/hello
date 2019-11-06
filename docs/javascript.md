@@ -5,3 +5,4 @@
 1. [如何实现 base64 编解码？](./javascript_base64-encode.md)
 1. [如何在弹框时，禁止页面滚动，同时允许弹框内容滚动？](./javascript_modal-scroll.md)
 1. [如何监听键盘事件？](./javascript_keyboard-events.md)
+1. [throttle 和 debounce 分别值什么？](./js_throttle-vs-debounce.md)
