@@ -17,6 +17,7 @@ Notes for everything.
 1. [GNU Make](./docs/gmake.md)
 1. [Go](./docs/go.md)
 1. [JavaScript](./docs/javascript.md)
+1. [macOS](./docs/macos.md)
 1. [Nginx](./docs/nginx.md)
 1. [Node](./docs/node.md)
 1. [Npm](./docs/npm.md)
