@@ -25,6 +25,7 @@ Notes for everything.
 1. [Shell](./docs/shell.md)
 1. [SQL](./docs/sql.md)
 1. [Svelte](./docs/svelte.md)
+1. [Swift](./docs/swift.md)
 1. [TypeScript](./docs/typescript.md)
 1. [Vue](./docs/vue.md)
 1. [WebAssembly](./docs/webassembly.md)
