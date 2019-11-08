@@ -2,7 +2,7 @@
 
 > Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.
 
-1. [起步](./docs/swift_get-started.md)
+1. [起步](./swift_get-started.md)
 
 ## REF
 
