@@ -15,6 +15,7 @@
 1. [统计数字及其他字符的次数](./c_count-in-array.md)
 1. [使用函数](./c_func.md)
 1. [使用字符数组](./c_char-array.md)
+1. [外部变量和作用域](./c_external-scope.md)
 
 ## REF
 
