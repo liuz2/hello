@@ -16,6 +16,7 @@
 1. [使用函数](./c_func.md)
 1. [使用字符数组](./c_char-array.md)
 1. [外部变量和作用域](./c_external-scope.md)
+1. [数据类型和长度](./c_type-bytes.md)
 
 ## REF
 
