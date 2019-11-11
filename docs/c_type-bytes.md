@@ -25,3 +25,11 @@ long int counter;
 
 1. `<limits.h>`
 1. `<float.h>`
+
+枚举常量，是另外一种类型的常量。它是一个整型值的列表。
+
+```c
+enum boolean { NO, YES };
+enum months { JAN = 1, FEB, MAR, APR, MAY, JUN,
+JUL, AUG, SEP, OCT, NOV, DEC };
+```
