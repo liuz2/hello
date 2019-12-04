@@ -62,4 +62,20 @@ These options are used to start vim in command line terminal.
 | --- | --- |
 | `<C-w> <C-w>` | jump to another window |
 
+## Folding
+
+All the folding commands start with "z".
+
+| KEY | ACTION |
+| --- | --- |
+| `zf` | create a fold |
+| `zo` | open one fold under the cursor |
+| `zO` | open all folds under the cursor |
+| `zc` | close one fold under the cursor |
+| `zr` | reduce folding |
+| `zR` | open all foldings |
+| `zm` | more folding |
+| `zM` | close all foldings |
+| `zi` | toggle foldings |
+
 [1]: http://vimdoc.sourceforge.net/ "Vimdoc: the online source for Vim documentation"
