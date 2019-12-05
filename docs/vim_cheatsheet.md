@@ -41,7 +41,33 @@ The Vim documentation consists of two parts:
 | `<C-r>` | undoes the undo |
 | `ZZ` | writes the file and exits |
 
+## Operators
+
+TODO: update the following USAGE. You can find it in `:h motions.txt` 46 of 1326
+
+| KEY | USAGE |
+| --- | --- |
+| c | change |
+| d | change |
+| y | change |
+| ~ | change |
+| g~ | change |
+| gu | change |
+| gU | change |
+| ! | change |
+| = | change |
+| gq | change |
+| g? | change |
+| `>` | change |
+| `<` | change |
+| zf | change |
+| g@ | change |
+
 ## Moving around
+
+```
+: motion.txt
+```
 
 | KEY | ACTION |
 | --- | --- |
@@ -49,6 +75,8 @@ The Vim documentation consists of two parts:
 | `j` | down |
 | `k` | up |
 | `l` | right |
+| `<C-g>` | to know where you are in the file |
+| `` ||
 
 ## CLI Options
 
