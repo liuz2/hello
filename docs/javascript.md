@@ -8,3 +8,4 @@
 1. [throttle 和 debounce 分别是什么？](./js_throttle-vs-debounce.md)
 1. [如何使用 Service Workers?](./js_service-worker.md)
 1. [如何实现 rem?](./js_rem.md)
+1. [Lottie Tutorial](./js_lottie-tutorial.md)
