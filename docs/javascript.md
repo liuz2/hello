@@ -10,3 +10,4 @@
 1. [如何实现 rem?](./js_rem.md)
 1. [Lottie Tutorial](./js_lottie-tutorial.md)
 1. [How to show detailed error message from other origin?](./js_error-detail-other-domains.md)
+1. [如何获取当前地理位置？](./js_geolocation.md)
