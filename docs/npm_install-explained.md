@@ -22,6 +22,14 @@ $ npm install <git remote url>
 <protocol>://[<user>[:<password>]@]<hostname>[:<port>][:][/]<path>[#<commit-ish> | #semver:<semver>]
 ```
 
+其中，`protocol` 只能是下列选项之一：
+
+1. `git`
+1. `git+ssh`
+1. `git+http`
+1. `git+https`
+1. `git+file`
+
 比如：
 
 ```sh
