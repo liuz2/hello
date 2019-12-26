@@ -1,14 +1,16 @@
 # Mocha 如何支持 ES6 模块语法？
 
-在 v6.0.0 中，[移除了 `--compilers` 选项][1]。但是，Mocha 提供了更简单的 `--require` 选项。
+Mocha v6.0.0 [移除了 `--compilers`][1]，同时提供了更方便的 `--require` 选项。
 
-如果要支持 ES6 模块语法，首先，下载 [`@babel/register`][3]:
+如果想在测试用例中使用 ES6 模块语法，可以按如下步骤操作。
+
+首先，下载 [`@babel/register`][3] 等 babel 全家桶:
 
 ```sh
 $ npm install --save-dev @babel/core @babel/register @babel/preset-env
 ```
 
-创建 `.babelrc`:
+然后，创建 `.babelrc`:
 
 ```json
 {
@@ -18,7 +20,7 @@ $ npm install --save-dev @babel/core @babel/register @babel/preset-env
 }
 ```
 
-修改 `pacakge.json`，新增如下命令：
+接着，修改 `package.json`，新增如下命令：
 
 ```json
 {
@@ -28,7 +30,7 @@ $ npm install --save-dev @babel/core @babel/register @babel/preset-env
 }
 ```
 
-运行 `npm run test` 即可。现在，可以在测试用例中愉快是使用 ES6 模块语法了。🎉
+最后，运行 `npm run test` 。从此，测试用例和 ES6 模块语法愉快的在一起了。🎉
 
 ## REF
 
