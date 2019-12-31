@@ -11,3 +11,10 @@
 1. [Lottie Tutorial](./js_lottie-tutorial.md)
 1. [How to show detailed error message from other origin?](./js_error-detail-other-domains.md)
 1. [如何获取当前地理位置？](./js_geolocation.md)
+
+## REF
+
+1. [ECMAScript 2019][2]
+
+[1]: https://www.ecma-international.org/publications/standards/Ecma-262.htm "Standard ECMA-262"
+[2]: https://www.ecma-international.org/ecma-262/10.0/index.html#Title "ECMAScript 2019"
