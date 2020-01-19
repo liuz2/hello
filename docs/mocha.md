@@ -5,6 +5,7 @@ Mocha 是一款基于 Node.js 的 JS 测试框架。特性丰富，简化异步�
 从 Github 贡献者的图表可以看出，[TJ][3] 是 Mocha 的初期主要开发者。后来他的兴趣转向 Go，就把 Mocha 交由别人打理。
 
 1. [如何让 Mocha 支持 ES6 模块语法？](./mocha_es6-module.md)
+1. [如何处理 window is not defined 的报错？](./mocha_window-not-defined.md)
 
 ## REF
 
