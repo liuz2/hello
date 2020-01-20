@@ -20,7 +20,29 @@ Babel 可以把新语法转换为兼容性的旧语法。TypeScript 有类似的
 
 Babel 使用 [compat-table][4] 决定在不同环境下，针对哪些特性进行转译。
 
-[create-react-app][5] 的用法很有趣，在开发阶段使用最新的浏览器，提升速度；在生产环境使用更广法的浏览器，保证兼容性。😊
+[create-react-app][5] 的用法很有趣，在开发阶段使用最新的浏览器，提升速度；在生产环境使用更广泛的浏览器，保证兼容性。
+
+**package.json**
+
+```json
+{
+    "name": "react-scripts",
+    "version": "1.1.0",
+    "browserslist": {
+        "development": [
+            "last 2 chrome versions",
+            "last 2 firefox versions",
+            "last 2 edge versions"
+        ],
+        "production": [
+            ">1%",
+            "last 4 versions",
+            "Firefox ESR",
+            "not ie < 11"
+        ]
+    }
+}
+```
 
 ## Babel 可定制性强
 
@@ -30,7 +52,7 @@ Babel 使用 [compat-table][4] 决定在不同环境下，针对哪些特性进�
 
 ## Babel Macros
 
-[`babel-plugin-macros`][8] 不在 Babel 配置文件中设置参数，而是作为依赖被倒入源码。比如：
+[`babel-plugin-macros`][8] 无需在 Babel 配置文件中设置，而是作为依赖注入源码。比如：
 
 ```js
 import idx from 'idx.macro';
@@ -96,7 +118,7 @@ $ npm install --save-dev @babel/preset-typescript @babel/plugin-proposal-class-p
 
 Babel 默认寻找 `.js` 文件，可以通过以下两种方式之一修改：
 
-1. 如何使用 Babel CLI，设置 `--extensions '.ts'`
+1. 如果使用 Babel CLI，设置 `--extensions '.ts'`
 1. 如果使用 Webpack，在 `resolve.extensions` 中增加 `ts`
 
 增加 `check-types` 命令
@@ -109,15 +131,15 @@ Babel 默认寻找 `.js` 文件，可以通过以下两种方式之一修改：
 }
 ```
 
-其中的 `tsc` 需要安装：`npm install --save-dev typescript`
+其中的 `tsc` 需要安装依赖：`npm install --save-dev typescript`
 
-为了配置 TypeScript，需要使用 `tsconfig.json`：
+配置 TypeScript 需要使用 `tsconfig.json`：
 
 ```json
 {
     "compilerOptions": {
         "target": "esnext",
-        "moduleResulution": "node",
+        "moduleResolution": "node",
         "allowJS": true,
         "noEmit": true,
         "strict": true,
