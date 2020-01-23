@@ -5,3 +5,4 @@
 1. [什么是 module wrapper?](./node_module-wrapper.md)
 1. [事件机制简介](./node_events.md)
 1. [HTTP 服务器](./node_http.md)
+1. [Design Mistakes in Node](./node_design-mistakes.md), by *Ryan Dahl*, 2018/06
