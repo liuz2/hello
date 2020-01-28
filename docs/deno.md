@@ -4,6 +4,14 @@
 
 Deno 是 Node.js 之父 [Ryan Dahl][2] 的另一个作品。为了修复 [Node.js 设计缺陷][3]，Ryan 重新发明了 Deno。
 
+在 macOS 上安装：
+
+```sh
+$ brew install deno
+```
+
+1. [Deno Manual](https://gitee.com/liuz2/reading-list/blob/master/books/deno-manual.md)
+
 ## REF
 
 1. [Deno][1], a secure runtime for JavaScript and TypeScript
