@@ -21,6 +21,7 @@ Notes for everything.
 1. [JavaScript](./docs/javascript.md)
 1. [Jest](./docs/jest.md)
 1. [macOS](./docs/macos.md)
+1. [Markdown](./docs/markdown.md)
 1. [Mocha](./docs/mocha.md)
 1. [Nginx](./docs/nginx.md)
 1. [Node](./docs/node.md)
