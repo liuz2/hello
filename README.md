@@ -14,6 +14,7 @@ Notes for everything.
 1. [DOM](./docs/dom.md)
 1. [ESLint](./docs/eslint.md)
 1. [Firefox](./docs/firefox.md)
+1. [Flutter](./docs/flutter/README.md)
 1. [Font](./docs/font.md)
 1. [Git](./docs/git.md)
 1. [GNU Make](./docs/gmake.md)
