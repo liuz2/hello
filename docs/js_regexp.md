@@ -2,7 +2,7 @@
 
 ## 什么是回溯？
 
-进入到匹配路径选择时，遇到失败的匹配路径，尝试走另外一个匹配路径的行为，称作回溯。
+进入到匹配路径选择时，遇到失败的匹配路径，尝试走另外一个匹配路径的行为，称作回溯（Backtrack）。
 
 ## 如何减少或避免回溯？
 1. 优化正则表达式：时刻注意回溯造成的性能影响
@@ -27,5 +27,7 @@ DFA 指对于给定的任意一个状态和输入字符，DFA 只会转移到一
 ## 参考文档
 
 1. [浅谈正则表达式原理 | AlloyTeam][1]，作者毕龙，2019/07/15
+2. [Details of the Cloudflare outage on July 2, 2019][2], by *John Graham-Cumming*, 2019/07/12
 
 [1]: http://www.alloyteam.com/2019/07/13574/ "浅谈正则表达式原理"
+[2]: https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/ "Details of the Cloudflare outage on July 2, 2019"
