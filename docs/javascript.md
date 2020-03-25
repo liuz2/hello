@@ -16,6 +16,10 @@
 ## REF
 
 1. [ECMAScript 2019][2]
+1. [Cloudflare Learning Center][3]，Resources on Cyber-Security and How the Internet Works From Cloudflare
+1. [Web | Google Developers][4]
 
 [1]: https://www.ecma-international.org/publications/standards/Ecma-262.htm "Standard ECMA-262"
 [2]: https://www.ecma-international.org/ecma-262/10.0/index.html#Title "ECMAScript 2019"
+[3]: https://www.cloudflare.com/learning/ "Cloudflare Learning Center"
+[4]: https://developers.google.cn/web "Web | Google Developers"
