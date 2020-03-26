@@ -12,6 +12,7 @@
 1. [How to show detailed error message from other origin?](./js_error-detail-other-domains.md)
 1. [如何获取当前地理位置？](./js_geolocation.md)
 1. [如何理解正则表达式？](./js_regexp.md)
+1. [如何理解 cookie?](./js_cookie.md)
 
 ## REF
 
