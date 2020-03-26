@@ -1,6 +1,7 @@
 # Visual Studio Code
 
 1. [VSCode 有哪些好用的插件？](./vscode_plugins.md)
+1. [The Journey of Visual Studio Code](./vscode_journey.md)
 
 ## REF
 
