@@ -2,6 +2,8 @@
 
 ## 基本用法
 
+使用 `render` 可以代替 `template` 模板字符串：
+
 ```js
 Vue.component('anchored-heading', {
     render(createElement) {
@@ -18,6 +20,27 @@ Vue.component('anchored-heading', {
         }
     }
 });
+```
+
+在单页应用中，可以向子组件动态传入属性：
+
+```js
+// main.js
+import Vue from 'vue';
+import App from './App.vue';
+
+new Vue({
+    render: h => h(App, {
+    	props: {
+      		foo: 38,
+    	},
+  	}),
+}).$mount('#app');
+
+// App.vue
+export default {
+    props: ['foo'],
+}
 ```
 
 ## createElement 函数签名
