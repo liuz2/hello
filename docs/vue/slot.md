@@ -26,7 +26,53 @@
 
 ## 编译范围
 
+当你想在插槽中使用数据时，比如：
+
+```xml
+<navigation-link url="/profile">
+    Logged in as {{ user.name }}
+</navigation-link>
+```
+
+插槽所能使用的变量范围和模板的其他部分一样。插槽并不能访问 `<navigation-link>` 的内部变量。比如，通过如下方式访问 `url` 是不可以的：
+
+```xml
+<navigation-link url="/profile">
+    Clicking here will send you to: {{ url }}
+    <!--
+	`url` 将是 undefined，因为插槽内容会传送到 `<navigation-link>`，而不是在 `<navigation-link>`
+	组件内定义。
+	-->
+</navigation-link>
+```
+
+> 记住，父模板的一切变量都会编译到父范围；子模板中的一切都将编译到子范围。
+
+## 后备内容（Fallback Content）
+
+有时候，需要为插槽指定后备内容。比如，对于 `<submit-button>` 组件：
+
+```xml
+<button type="submit">
+    <slot></slot>
+</button>
+```
+
+我们想在为提供任何内容时，渲染出 "Submit" 字段。只需要将后备内容置于 `<slot>` 之间：
+
+```xml
+<button type="submit">
+    <slot>Submit</slot>
+</button>
+```
+
+## 命名插槽
+
+> 以下是 v2.6.0+ 更新内容。
+
 TODO
+
+> 以下是 v2.6.0- 的旧版语法。
 
 ## 参考资料
 
