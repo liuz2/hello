@@ -70,9 +70,166 @@
 
 > 以下是 v2.6.0+ 更新内容。
 
-TODO
+有时需要多个插槽。比如，在 `<base-layout>` 组件中有如下模板：
+
+```xml
+<div class="container">
+    <header>
+        <!-- We want header content here -->
+    </header>
+    <main>
+        <!-- We want main content here -->
+    </main>
+    <footer>
+        <!-- We want footer content here -->
+    </footer>
+</div>
+```
+
+对于这种情况，`<slot>` 元素有一种特殊的属性：`name`，它可以用来定义更多的插槽：
+
+```xml
+<div class="container">
+    <header>
+        <slot name="header"></slot>
+    </header>
+    <main>
+        <slot></slot>
+    </main>
+    <footer>
+        <slot name="footer"></slot>
+    </footer>
+</div>
+```
+
+没有 `name` 的 `<slot>` 拥有默认的 name: `default`。
+
+为了向命名插槽写入内容，我们可以在 `<template>` 上使用 `v-slot` 指令，只需将插槽名称当作 `v-slot` 的参数即可。
+
+```xml
+<base-layout>
+    <template v-slot:header>
+        <h1>Here might be a page title</h1>
+    </template>
+    
+    <p>A paragraph for the main content.</p>
+    <p>And another one.</p>
+    
+    <template v-slot:footer>
+        <p>Here's some contact info.</p>
+    </template>
+</base-layout>
+```
+
+这样一来，`<template>` 包裹的元素将被写入相应的插槽位置，其余元素将被写入 default 插槽。
+
+当然，也可以将 default 插槽的内容放入 `<template>` 中，比如：
+
+```xml
+<template v-slot:default>
+    Some Default Content
+</template>
+```
+
+⚠️ 注意：`v-slot` 指令只能在 `<template>` 元素上使用。这一点与不推荐使用的 `slot` 属性不同。谨记！
 
 > 以下是 v2.6.0- 的旧版语法。
+
+TODO
+
+## Scoped 插槽
+
+> 以下是 v2.6.0+ 的更新
+
+有时候，需要让插槽内容访问子组件内部的数据。比如，`<current-user>` 组件有如下模板：
+
+```xml
+<span>
+    <slot>{{ user.lastName }}</slot>
+</span>
+```
+
+如果我们想替换后备内容，用 first name 代替 last name。比如：
+
+```xml
+<current-user>
+    {{ user.firstName }}
+</current-user>
+```
+
+以上的写法无法正常运行，因为只有 `<current-user>` 组件可以使用 `user` 变量。我们提供的插槽内容却是在父容器中渲染的。两者没有交集。
+
+为了让父容器的插槽内容访问 `user` 变量，可以将 `user` 绑定为 `<slot>` 元素的一个属性：
+
+```xml
+<span>
+    <slot v-bind:user="user">
+        {{ user.lastName }}
+    </slot>
+</span>
+```
+
+绑定到 `<slot>` 的属性，称作**插槽属性（slot props）**。现在，在父容器中，可以使用 `v-slot` 定义插槽属性的名称：
+
+```xml
+<current-user>
+    <template v-slot:default="slotProps">
+        {{ slotProps.user.firstName }}
+    </template>
+</current-user>
+```
+
+在上例中，我们使用 `slotProps` 来表示包含所有插槽属性的对象。但是，我们可以使用任意名称。
+
+### 单独默认插槽的简写语法
+
+对于上面的例子，如果默认插槽是唯一的内容，组件标签可以用作插槽的模板。这允许用户在组件上直接使用 `v-slot` 指令：
+
+```xml
+<current-user v-slot:default="slotProps">
+    {{ slotProps.user.firstName }}
+</current-user>
+```
+
+还可以更进一步简写。如果是 default 插槽，那么 `v-slot` 的参数可以省略：
+
+```xml
+<current-user v-slot="slotProps">
+    {{ slotProps.user.firstName }}
+</current-user>
+```
+
+注意：默认插槽的简写语法不能和命名插槽混写，否则会导致范围混淆。
+
+```xml
+<!-- 不合法，会导致警告 -->
+<current-user v-slot="slotProps">
+    {{ slotProps.user.firstName }}
+    <template v-slot:other="otherSlotProps">
+        slotProps is NOT available here
+    </template>
+</current-user>
+```
+
+只要存在多个插槽，务必使用 `<template>` 的完整写法：
+
+```xml
+<current-user>
+    <template v-slot:default="slotProps">
+        {{ slotProps.user.firstName }}
+    </template>
+    
+    <template v-slot:other="otherSlotProps">
+        ...
+    </template>
+</current-user>
+```
+
+### 解构插槽属性
+
+TODO
+
+> 以下是 v2.6.0- 的内容，不推荐使用
 
 ## 参考资料
 
