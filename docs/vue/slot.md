@@ -4,9 +4,9 @@
 
 ## 插槽内容
 
-受 Web Components 规范初稿启发，Vue 实现了一种内容分发 API，即把 `<slot>` 元素当作内容的分发出口。
+受 Web Components 规范初稿启发，Vue 实现了一种内容分发 API，把 `<slot>` 元素当作内容的分发出口。
 
-比如，可以这样使用自定义组件：
+比如，可以像这样使用自定义组件：
 
 ```xml
 <navigation-link url="/profile">
