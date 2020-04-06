@@ -12,13 +12,107 @@
 
 以下函数和数据元素提供了针对当前进程和用户的信息以及操作。
 
-### os.environ
+### environ
 
 一个 mapping 对象，表示环境变量。比如，`environ['HOME']` 代表你的用户目录，相当于 C 语言中的 `getenv("HOME")`。
 
 ```py
 >>> os.environ['HOME']
 '/Users/liuz'
+```
+
+### system(command)
+
+在子进程中执行 `command` 命令。这是通过调用标准 C 函数 `system()` 实现的。比如，打开 Vim 编辑器：
+
+```py
+>>> os.system('vim')
+```
+
+### sep
+
+当前操作系统用来分隔路径的符号。在 POSIX 中是 `/`，在 Windows 中是 `\\`。
+
+```py
+>>> os.sep
+'/'
+```
+
+### pathsep
+
+用来分隔搜寻路径的符号，在 POSIX 中是 `:`，在 Windows 中是 `;`。
+
+```py
+>>> os.pathsep
+':'
+```
+
+### urandom(n)
+
+返回一个加密级别的随机字符串。
+
+```py
+>>> os.urandom(2)
+b'n\x96'
+```
+
+### getcwd()
+
+返回当前路径。
+
+```py
+>>> os.getcwd()
+'/path/to/current/directory'
+```
+
+### chdir()
+
+更改当前路径。
+
+```py
+>>> os.chdir('node_modules')
+```
+
+### mkdir()
+
+创建目录。
+
+```py
+>>> os.mkdir('hello')
+```
+
+如果重复创建，会报错：
+
+```py
+>>> os.mkdir('hello')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileExistsError: [Errno 17] File exists: 'hello'
+```
+
+### listdir()
+
+列出当前目录下的文件（含目录）。
+
+```py
+>>> os.listdir()
+['.DS_Store', 'node_modules', 'docs', 'README.md', '.gitignore', '.git', 'assets']
+```
+
+### rename()
+
+重命名。
+
+```py
+>>> os.rename('hello', 'world')
+```
+
+### rmdir()
+
+删除空目录。如果目录不存在、或者非空，将分别抛出 `FileNotFoundError` 或 `OSError` 异常。
+
+```py
+>>> os.listdir()
 ```
 
 
