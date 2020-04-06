@@ -29,6 +29,7 @@ Notes for everything.
 1. [Node](./docs/node.md)
 1. [Npm](./docs/npm.md)
 1. [OpenSSL](./docs/openssl/README.md)
+1. [Python](./docs/python/README.md)
 1. [Rollup](./docs/rollup.md)
 1. [Rust](./docs/rust.md)
 1. [Shell](./docs/shell.md)
