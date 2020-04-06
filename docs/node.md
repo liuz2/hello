@@ -6,3 +6,7 @@
 1. [事件机制简介](./node_events.md)
 1. [HTTP 服务器](./node_http.md)
 1. [Design Mistakes in Node](./node_design-mistakes.md), by *Ryan Dahl*, 2018/06
+
+## 资源列表
+
+1. [Developing with Node.js on Windows](https://docs.microsoft.com/en-us/windows/nodejs/)
