@@ -11,7 +11,7 @@
 1. [如何使用 provide 和 inject ?](./vue_provide-inject.md)
 1. [如何使用 Vuex?](./vue_vuex-usage.md)
 1. [Vue Composition API RFC 是什么？](./vue_composition-api-rfc.md)
-1. [如何理解 Slot?](./vue/slot.md)
+1. [如何理解 Slot?](./slot.md)
 
 ## REF
 

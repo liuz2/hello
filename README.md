@@ -39,7 +39,7 @@ Notes for everything.
 1. [TypeScript](./docs/typescript.md)
 1. [Vim](./docs/vim.md)
 1. [VSCode](./docs/vscode.md)
-1. [Vue](./docs/vue.md)
+1. [Vue](./docs/vue/README.md)
 1. [WebAssembly](./docs/webassembly.md)
 1. [Webpack](./docs/webpack/README.md)
 1. [Weixin](./docs/weixin.md)
