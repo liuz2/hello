@@ -227,9 +227,45 @@ TODO
 
 ### 解构插槽属性
 
-TODO
+在内部，scoped 插槽会将插槽内容封装到一个函数，函数只有一个参数：
+
+```js
+function internal_func(slotProps) {
+    // ... slot content ...
+}
+```
+
+这意味着 `v-slot` 的数值可以接受任意合法的 JavaScript 变量。在某些环境下（单文件组件或现代浏览器），还可以使用 ES2015 的解构赋值获取某些属性。
+
+```xml
+<current-user v-slot="{ user }">
+    {{ user.firstName }}
+</current-user>
+```
+
+这种写法不仅让模版更简洁，还可以重命名属性：
+
+```xml
+<current-user v-slot="{ user.person }">
+    {{ person.firstName }}
+</current-user>
+```
+
+甚至可以定义默认参数：
+
+```xml
+<current-user v-slot="{ user = { firstName: 'Guest' } }">
+    {{ user.firstName }}
+</current-user>
+```
 
 > 以下是 v2.6.0- 的内容，不推荐使用
+
+## 动态插槽名称
+
+> v2.6.0+ 新增内容
+
+
 
 ## 参考资料
 
