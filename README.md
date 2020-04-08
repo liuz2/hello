@@ -43,5 +43,5 @@ Notes for everything.
 1. [Vue](./docs/vue/README.md)
 1. [WebAssembly](./docs/webassembly.md)
 1. [Webpack](./docs/webpack/README.md)
-1. [Weixin](./docs/weixin.md)
+1. [Weixin](./docs/weixin/README.md)
 1. [Yarn](./docs/yarn.md)
