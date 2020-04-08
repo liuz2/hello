@@ -4,7 +4,7 @@ Notes for everything.
 
 1. [Android](./docs/android/README.md)
 1. [Babel](./docs/babel.md)
-1. [C](./docs/c.md)
+1. [C](./docs/c/README.md)
 1. [Charles](./docs/charles.md)
 1. [Chrome](./docs/chrome.md)
 1. [Compiler](./docs/compiler.md)
