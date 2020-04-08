@@ -21,7 +21,7 @@ Notes for everything.
 1. [Git](./docs/git.md)
 1. [GNU Make](./docs/gmake.md)
 1. [Go](./docs/go/README.md)
-1. [JavaScript](./docs/javascript.md)
+1. [JavaScript](./docs/javascript/README.md)
 1. [Jest](./docs/jest.md)
 1. [macOS](./docs/macos.md)
 1. [Markdown](./docs/markdown.md)
