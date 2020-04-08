@@ -9,6 +9,7 @@ Notes for everything.
 1. [Chrome](./docs/chrome.md)
 1. [Compiler](./docs/compiler.md)
 1. [CSS](./docs/css.md)
+1. [cURL](./docs/curl/README.md)
 1. [Dart](./docs/dart.md)
 1. [Deno](./docs/deno.md)
 1. [Docker](./docs/docker.md)
