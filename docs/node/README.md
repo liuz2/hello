@@ -8,6 +8,7 @@
 1. [Design Mistakes in Node](./node_design-mistakes.md), by *Ryan Dahl*, 2018/06
 1. [npm install 有哪些格式？](./npm_install-explained.md)
 1. [如何设置 npm 的淘宝镜像？](./npm.md)
+1. [如何设置 mock 服务器？](./mock-server.md)
 
 ## 资源列表
 
