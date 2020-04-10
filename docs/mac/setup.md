@@ -25,7 +25,13 @@ $ brew install wget
 
 ## Oh My Zsh
 
-[官网](https://ohmyz.sh/)
+[GitHub](https://github.com/ohmyzsh/ohmyzsh)
+
+安装命令：
+
+```sh
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 ## nginx
 
