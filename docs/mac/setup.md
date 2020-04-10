@@ -26,3 +26,19 @@ $ brew install wget
 ## Oh My Zsh
 
 [官网](https://ohmyz.sh/)
+
+## nginx
+
+[nginx](https://nginx.org/) 是一个高性能的 HTTP 和反向代理 Web 服务器。
+
+安装命令：
+
+```sh
+$ brew install nginx
+```
+
+启动：
+
+```sh
+$ nginx
+```
