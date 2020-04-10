@@ -23,6 +23,14 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 $ brew install wget
 ```
 
+## git
+
+版本控制软件，安装：
+
+```sh
+$ xcode-select --install
+```
+
 ## Oh My Zsh
 
 [GitHub](https://github.com/ohmyzsh/ohmyzsh)
