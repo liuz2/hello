@@ -37,6 +37,7 @@ Notes for everything.
 1. [Svelte](./docs/svelte.md)
 1. [Swift](./docs/swift.md)
 1. [TypeScript](./docs/typescript.md)
+1. [Texinfo](./docs/texinfo/README.md)
 1. [Vim](./docs/vim.md)
 1. [VSCode](./docs/vscode.md)
 1. [Vue](./docs/vue/README.md)
