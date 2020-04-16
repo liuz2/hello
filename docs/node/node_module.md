@@ -1,4 +1,4 @@
-# 模块和 npm
+# 模块和 package
 
 ## 模块
 
@@ -61,51 +61,6 @@ Module {
 11. `dependencies` 本包所依赖的包。
 
 真实世界的案例，[webpack/package.json](https://github.com/webpack/webpack/blob/master/package.json)
-
-## npm
-
-```sh
-# 升级 npm
-$ sudo npm install npm -g
-
-# 查看当前目录安装的包
-$ npm list
-# 查看全局安装的包
-$ npm list -g
-
-# 卸载模块
-$ npm uninstall <package_name>
-
-# 搜索模块
-$ npm search <package_name>
-
-# 查看信息
-$ npm view <package_name>
-
-# 查看当前项目的顶级 node_modules 绝对目录
-$ npm root
-# 查看全局包的安装路径
-$ npm root -g
-
-# 清空 npm 本地缓存
-$ npm cache clear
-
-# 更新当前目录下的模块
-$ npm update <package>
-
-# 更新全局模块
-$ npm update <package> -g
-
-# 查看可执行文件的路径
-$ npm bin
-$ npm bin --global
-```
-
-### 使用淘宝 NPM 镜像
-
-```sh
-$ npm install -g cnpm --registry=https://registry.npm.taobao.org
-```
 
 ### peerDependencies 是什么？
 
