@@ -1,6 +1,7 @@
 # Node
 
 1. [安装和配置](./node_install.md)
+1. [如何让输出不换行？](./node-stdout-write.md)
 1. [模块和 package](./node_module.md)
 1. [常用的 npm 命令](./npm-cli-explained.md)
 1. [什么是 module wrapper?](./node_module-wrapper.md)
