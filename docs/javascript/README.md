@@ -1,5 +1,6 @@
 # JavaScript
 
+1. [Function.prototype.apply 和 Function.prototype.call 的区别是什么？](./apply-vs-call.md)
 1. [如何让任意元素获得焦点？](./javascript_focus.md)
 1. [如何让页面后退时强制刷新？](./javascript_nav-refresh.md)
 1. [如何实现 base64 编解码？](./javascript_base64-encode.md)
@@ -14,6 +15,7 @@
 1. [如何理解正则表达式？](./js_regexp.md)
 1. [如何理解 cookie?](./js_cookie.md)
 1. [如何正确识别包含 emoji 的字符长度？](./emoji-string.md)
+1. [如何使用 axios?](./axios-usage.md)
 
 ## REF
 
