@@ -16,6 +16,7 @@
 1. [如何理解 cookie?](./js_cookie.md)
 1. [如何正确识别包含 emoji 的字符长度？](./emoji-string.md)
 1. [如何使用 axios?](./axios-usage.md)
+1. [什么是 URLSearchParams?](./about-urlsearchparams.md)
 
 ## REF
 
