@@ -14,7 +14,7 @@ Notes for everything.
 1. [Deno](./docs/deno.md)
 1. [Docker](./docs/docker/README.md)
 1. [DOM](./docs/dom/README.md)
-1. [ESLint](./docs/eslint.md)
+1. [ESLint](./docs/eslint/README.md)
 1. [Firefox](./docs/firefox.md)
 1. [Flutter](./docs/flutter/README.md)
 1. [Font](./docs/font.md)
