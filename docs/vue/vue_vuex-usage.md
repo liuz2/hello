@@ -485,7 +485,9 @@ const store = new Vuex.Store({
     modules: {
         account: {
             namespaced: true,
-            state: { ... },
+
+            // module assets
+            state: { ... }, // 模块 state 已经嵌套，所以不受 namespaced 选项的影响
             getters: {
                 isAdmin() { ... }, // => getters['account/isAdmin']
             },
@@ -496,18 +498,20 @@ const store = new Vuex.Store({
                 login() { ... }, // => commit('account/login')
             },
 
+            // 嵌套模块
             modules: {
+                // 从父模块继承命名空间
                 myPage: {
                     state: { ... },
                     getters: {
-                        state: { ... },
-                        getters: {
-                            profile() { ... }, // => getters['account/profile']
-                        },
+                        profile() { ... }, // => getters['account/profile']
                     },
                 },
+
+                // 更进一步嵌套命名空间
                 posts: {
                     namespaced: true,
+
                     state: { ... },
                     getters: {
                         popurlar() { ... }, // => getters['account/posts/popular']
@@ -519,7 +523,19 @@ const store = new Vuex.Store({
 });
 ```
 
-命名空间的模块暂时忽略。
+命名空间内的 getters 和 actions 接收的参数是局部的 `getters`, `dispatch` 和 `commit`。因此使用同一个模块内的资源时，无需增加前缀。
+
+### 在命名空间模块内访问全局资源
+
+如果要使用全局的 state 和 getters，可以使用 getters 函数的第 3 个参数（`rootState`）和第 4 个参数（`rootGetters`）。在 action 函数中的 `context` 对象，也有这两个属性。
+
+为了在全局命名空间中 dispatch actions 或 commit mutations，可以在 `dispatch` 和 `commit` 中传递第三个参数 `{ root: true }`。
+
+```js
+modules: {
+    foo: {},
+}
+```
 
 一个真实的 [Vuex 案例](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)。
 
