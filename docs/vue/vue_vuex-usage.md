@@ -2,6 +2,8 @@
 
 > 以下是官方文档的学习笔记。
 
+![Vuex Diagram](./images/vuex-diagram.png)
+
 ## [安装](https://vuex.vuejs.org/installation.html)
 
 ```sh
