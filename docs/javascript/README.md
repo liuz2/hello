@@ -13,6 +13,7 @@
 1. [How to show detailed error message from other origin?](./js_error-detail-other-domains.md)
 1. [如何获取当前地理位置？](./js_geolocation.md)
 1. [如何理解正则表达式？](./js_regexp.md)
+1. [有哪些正则表达式工具？](./regexp-tools.md)
 1. [如何理解 cookie?](./js_cookie.md)
 1. [如何正确识别包含 emoji 的字符长度？](./emoji-string.md)
 1. [如何使用 axios?](./axios-usage.md)
