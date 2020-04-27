@@ -19,6 +19,7 @@
 1. [如何使用 axios?](./axios-usage.md)
 1. [什么是 URLSearchParams?](./about-urlsearchparams.md)
 1. [URL 的组成部分有哪些？](./about-url.md)
+1. [ES6 有哪些好用的新增特性？](./es6-tips.md)
 
 ## REF
 
