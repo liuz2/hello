@@ -58,3 +58,5 @@ for (let c of 'foo') {
 ```
 
 ## 参考资料
+
+1. [ES6 入门教程（第3版）](https://es6.ruanyifeng.com/)，作者阮一峰，2017 年 9 月，电子工业出版社
