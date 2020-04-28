@@ -40,7 +40,21 @@ arr.includes(42);
 使用 `for ... of` 循环遍历数组和字符串：
 
 ```js
+for (let item of [42, 12, 36]) {
+    console.log(item);
+}
+// =>
+// 42
+// 23
+// 36
 
+for (let c of 'foo') {
+    console.log(c);
+}
+// =>
+// f
+// o
+// o
 ```
 
 ## 参考资料
