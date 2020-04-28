@@ -18,6 +18,13 @@ str.includes('foo');
 // => true
 ```
 
+`repeat()` 复制字符串：
+
+```js
+'foo '.repeat(3);
+// => 'foo foo foo '
+```
+
 ## ARRAY
 
 `includes()` 判断数组是否包含某个元素：
