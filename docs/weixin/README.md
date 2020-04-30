@@ -12,6 +12,7 @@
 1. [如何使用自定义组件的事件？](./weixin_app-custom-event.md)
 1. [如何跳转到其他微信小程序？](./weixin_app-jump-mini-program.md)
 1. [特性兼容性表格](./weixin_app-compatible-table.md)
+1. [如何使用订阅消息？](./subscribe-message.md)
 
 ## REF
 
