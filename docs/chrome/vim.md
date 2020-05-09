@@ -25,8 +25,9 @@ $ ./make.js build
 
 输入 `?` 就会出现使用说明，<kbd>ESC</kbd> 退出。从此就可以摆脱鼠标了。
 
+使用说明默认显示基本命令，点击右下角的 **Show advanced commands** 可以查看高级命令。
+
 ## REF
 
 1. [philc/vimium](https://github.com/philc/vimium)
-1. [15 分钟入门 Chrome 神器 Vimium](https://www.jianshu.com/p/849d6b21e02e), 作者*AC手环*，2017/07/30
 1. [Installing From Source](https://github.com/philc/vimium/blob/master/CONTRIBUTING.md#installing-from-source)
