@@ -31,3 +31,4 @@ $ ./make.js build
 
 1. [philc/vimium](https://github.com/philc/vimium)
 1. [Installing From Source](https://github.com/philc/vimium/blob/master/CONTRIBUTING.md#installing-from-source)
+1. [Vimium Wiki](https://github.com/philc/vimium/wiki)
