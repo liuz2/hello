@@ -34,6 +34,8 @@ grep [options] [pattern] [file ...]
 
 `-v, --invert-match` 反转匹配行
 
+`-w, --word-regexp` 匹配单词
+
 ## 常用场景
 
 在目录 foo 下查找文本 bar
