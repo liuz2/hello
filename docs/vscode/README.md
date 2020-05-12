@@ -1,5 +1,6 @@
 # Visual Studio Code
 
+1. [入门视频](./introvideos.md)
 1. [VSCode 有哪些好用的插件？](./vscode_plugins.md)
 1. [The Journey of Visual Studio Code](./vscode_journey.md)
 1. [常用快捷键](./vscode_hotkey.md)
