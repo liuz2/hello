@@ -24,6 +24,7 @@ Notes for everything.
 1. [Go](./docs/go/README.md)
 1. [JavaScript](./docs/javascript/README.md)
 1. [Jest](./docs/jest/README.md)
+1. [Linux](./docs/linux/README.md)
 1. [macOS](./docs/mac/README.md)
 1. [Markdown](./docs/markdown/README.md)
 1. [Mocha](./docs/mocha/README.md)
