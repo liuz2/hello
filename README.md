@@ -11,7 +11,7 @@ Notes for everything.
 1. [CSS](./docs/css/README.md)
 1. [cURL](./docs/curl/README.md)
 1. [Dart](./docs/dart.md)
-1. [Deno](./docs/deno.md)
+1. [Deno](./docs/deno/README.md)
 1. [Docker](./docs/docker/README.md)
 1. [DOM](./docs/dom/README.md)
 1. [Emacs](./docs/emacs/README.md)

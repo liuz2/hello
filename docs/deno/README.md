@@ -4,6 +4,8 @@
 
 Deno 是 Node.js 之父 [Ryan Dahl][2] 的另一个作品。为了修复 [Node.js 设计缺陷][3]，Ryan 重新发明了 Deno。
 
+2020 年 5 月 13 日，Deno v1.0 发布。
+
 在 macOS 上安装：
 
 ```sh
