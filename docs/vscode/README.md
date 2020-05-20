@@ -4,6 +4,7 @@
 1. [VSCode 有哪些好用的插件？](./vscode_plugins.md)
 1. [The Journey of Visual Studio Code](./vscode_journey.md)
 1. [常用快捷键](./vscode_hotkey.md)
+1. [如何调试代码？](./debugging.md)
 
 ## REF
 
