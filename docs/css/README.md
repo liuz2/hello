@@ -7,3 +7,4 @@
 1. [如何使用视口单位？](./css_viewport-unit.md)
 1. [SCSS](./scss.md)
 1. [如何设定元素的背景填充模式？](./css_background-clip.md)
+1. [如何使用 CSS3 动画？](./css3-animation.md)
