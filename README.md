@@ -38,6 +38,7 @@ Notes for everything.
 1. [SQL](./docs/sql/README.md)
 1. [Svelte](./docs/svelte.md)
 1. [Swift](./docs/swift/README.md)
+1. [Training](./docs/training/README.md)
 1. [TypeScript](./docs/typescript/README.md)
 1. [Texinfo](./docs/texinfo/README.md)
 1. [Vim](./docs/vim/README.md)
