@@ -24,6 +24,8 @@ Tony Hoare 托尼·霍尔
 
 软件设计有两种方式：一种方式是，使软件过于简单，明显没有缺陷；另一种方式是，使软件过于复杂，没有明显的缺陷。
 
-## 表面层次的改进
+## 使用合适的变量名
 
-1. 使用合适的变量名
+> You should name a variable using the same care with which you name a first-born child.
+
+其他人关心程序的运行结果，程序员要关心程序的内部结构。
