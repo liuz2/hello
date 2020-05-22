@@ -29,3 +29,11 @@ Tony Hoare 托尼·霍尔
 > You should name a variable using the same care with which you name a first-born child.
 
 其他人关心程序的运行结果，程序员要关心程序的内部结构。
+
+> Did we do our best to "leave the campground cleaner than we found it"?
+
+> We are honest about the state of our code because code is never perfect.
+
+> I can teach you the physics of riding a bicycle. And you'd still fall down the first time you climbed on that bike.
+
+> This book will make you work, and work hard.
