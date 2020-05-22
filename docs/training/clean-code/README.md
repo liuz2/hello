@@ -12,7 +12,11 @@
 
 ## 标准
 
-在《Clean Code》一书中 Bob 大叔认为在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。
+在《Clean Code》一书中 Bob 大叔认为在代码阅读过程中人们说脏话的频率（`WTFs/m`）是衡量代码质量的唯一标准。
+
+<img src="./img/wtfm.jpg">
+
+<sub>漫画作者：*Thom Holwerda*，原始链接：https://www.osnews.com/story/19266/wtfsm/</sub>
 
 代码应当易于理解，最小化代码理解时间。
 
