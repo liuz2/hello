@@ -22,6 +22,7 @@ Notes for everything.
 1. [Git](./docs/git/README.md)
 1. [GNU Make](./docs/make/README.md)
 1. [Go](./docs/go/README.md)
+1. [Hugo](./docs/hugo/README.md)
 1. [JavaScript](./docs/javascript/README.md)
 1. [Jest](./docs/jest/README.md)
 1. [Linux](./docs/linux/README.md)
