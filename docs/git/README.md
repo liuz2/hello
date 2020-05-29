@@ -7,6 +7,7 @@
 1. [修复 git push 时的 RPC failed 的报错](./fix-rpc-failed.md)
 1. [关于 Gerrit](./about-gerrit.md)
 1. [Github 高级用法](./github-protips.md)
+1. [如何使用多账户？](./multi-accounts.md)
 
 ## 参考资料
 
