@@ -20,7 +20,7 @@ Tony Hoare 托尼·霍尔
 
 > There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.
 
-构建一个软件设计有两种方式。一种方法是让它足够简单，明显没有缺陷；另一种方法是让它很复杂，看不出明显的缺陷。第一种方法要难得多。
+编写软件有两种方式：一种让它足够简单，明显没有缺陷；另一种让它很复杂，看不出明显的缺陷。第一种方法要难得多。
 
 ## 使用合适的变量名
 
