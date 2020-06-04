@@ -20,6 +20,7 @@
 1. [什么是 URLSearchParams?](./about-urlsearchparams.md)
 1. [URL 的组成部分有哪些？](./about-url.md)
 1. [ES6 有哪些好用的新增特性？](./es6-tips.md)
+1. [在 Vue 中引入 Swiper 报错怎么办？ ](./swiper-error.md)
 
 ## REF
 
