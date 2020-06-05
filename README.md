@@ -3,6 +3,7 @@
 Notes for everything.
 
 1. [Android](./docs/android/README.md)
+1. [Angular](./docs/angular/README.md)
 1. [Babel](./docs/babel/README.md)
 1. [C](./docs/c/README.md)
 1. [Charles](./docs/charles/README.md)
