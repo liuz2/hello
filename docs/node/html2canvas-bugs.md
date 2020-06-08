@@ -13,7 +13,6 @@
 
 解决办法：将 html2canvas 回退到 `^1.0.0-alpha.12` 版本即可。
 
-以下是两个在线 demo：
+[点击这里](https://liuz2.gitee.io/test/html2canvas-demo/index.html)，可以查看 html2canvas 最近版本的表现。
 
-1. [使用最新版本的 html2canvas](https://www.1zh.tech/test/html2canvas-demo/index.html)
-1. [使用 v1.0.0-alpha.12 版本的 html2canvas](https://www.1zh.tech/test/html2canvas-demo/index.12.html)
+通过实验发现，最近的 html2canvas 版本在电脑端表现相对稳定，截图表现基本正常。但在移动端（尤其是 iOS 端），表现不太稳定，要么不执行截图操作（`v1.0.0-rc.5`），要么截图区域错误（`v1.0.0-rc.4`, `v1.0.0-rc.3`, `v1.0.0-rc.2`）。
