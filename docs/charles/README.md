@@ -1,6 +1,7 @@
 # Charles
 
 1. [如何使用断点？](./breakpoints.md)
+1. [如何使用 Map Remote?](./map-remote.md)
 
 ## REF
 
