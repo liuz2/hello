@@ -1,5 +1,7 @@
 # Mock 服务器
 
+首先在本机[下载安装 Node.js][2]。
+
 可以使用 [JSON Server][1]。首先全局安装：
 
 ```sh
@@ -39,3 +41,4 @@ $ json-server --watch db.json
 ```
 
 [1]: https://github.com/typicode/json-server "JSON Server"
+[2]: node_install.md "Install Node.js"

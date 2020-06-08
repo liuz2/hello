@@ -1,5 +1,15 @@
 # Node.js 安装和配置
 
+## macOS
+
+```sh
+$ brew install node
+```
+
+## Windows
+
+进入[下载地址][1]，选择对应的 Windows Installer 即可。
+
 ## Linux
 
 直接使用已编译好的包：
@@ -31,12 +41,6 @@ $ sudo make install
 $ node --version
 ```
 
-## macOS
-
-```sh
-$ brew install node
-```
-
 ## 基本代码
 
 ```js
@@ -53,3 +57,5 @@ console.log("Server running at http://127.0.0.1:8888/");
 ## REF
 
 - [Node.js 安装配置 | 菜鸟教程](http://www.runoob.com/nodejs/nodejs-install-setup.html)
+
+[1]: "https://nodejs.org/en/download/" "Download Node.js"
