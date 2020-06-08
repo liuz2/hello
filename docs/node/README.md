@@ -13,6 +13,7 @@
 1. [如何设置 npm 淘宝镜像？](./npm_taobao_mirror.md)
 1. [如何设置 mock 服务器？](./mock-server.md)
 1. [如何解决 Windows 系统无法运行 Node.js 脚本的问题？](./windows-node-run-errors.md)
+1. [html2canvas 的 bug 记录](./html2canvas-bugs.md)
 
 ## 资源列表
 
