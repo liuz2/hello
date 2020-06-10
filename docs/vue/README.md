@@ -1,5 +1,6 @@
 # Vue
 
+1. [如何使用列表渲染？](./list.md)
 1. [如何使用 Vue CLI?](./vue_cli-usage.md)
 1. [如何使用 render 函数？](./vue_render.md)
 1. [如何使用自定义指令？](./vue_directive.md)
