@@ -108,7 +108,37 @@ export class ProductAlertsComponent implements OnInit {
 
 ## 输出
 
-[TODO](https://angular.cn/start#output)
+使用 `@Output()` 装饰器和事件发射器 `EventEmitter()` 定义一个属性，可以在属性变化时发出事件。
+
+```ts
+import { Output, EventEmitter } from '@angular/core';
+
+export class ProductAlertsComponent {
+    @Input() product;
+    @Output() notify = new EventEmitter();
+}
+```
+
+```html
+<button (click)="notify.emit()">Notify Me</button>
+```
+
+接着在父组件中定义监听方法：
+
+```ts
+export class ProductListComponent {
+    onNotify() {
+        // do some awesome action
+    }
+}
+```
+
+```html
+<app-product-alerts
+    [product]="product"
+    (notify)="onNotify()">
+</app-product-alerts>
+```
 
 ## 参考资料
 
