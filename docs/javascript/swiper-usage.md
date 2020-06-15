@@ -1,6 +1,10 @@
 # 使用 Swiper
 
-以 `v3.2.7` 为例。
+以 `v3.2.7` 为例。首先，安装依赖：
+
+```sh
+$ npm install swiper@3.2.7 --save
+```
 
 定义 HTML 结构
 
@@ -29,7 +33,7 @@ var mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
     /* 设置 slide 间隔 */
     spaceBetween: 10,
-    
+
     onSlideChangeEnd: (swiper) => {
         console.log(swiper.activeIndex);
     }
