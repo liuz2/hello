@@ -22,6 +22,7 @@
 1. [ES6 有哪些好用的新增特性？](./es6-tips.md)
 1. [如何使用 Swiper?](./swiper-usage.md)
 1. [在 Vue 中引入 Swiper 报错怎么办？ ](./swiper-error.md)
+1. [固定吸地按钮的页面有哪些注意事项？](./fixed-footer-button-tips.md)
 
 ## REF
 
