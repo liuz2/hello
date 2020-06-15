@@ -17,14 +17,29 @@
 配置 Swiper
 
 ```js
+import Swiper from 'swiper';
+import 'swiper/dist/css/swiper.css';
+
 var mySwiper = new Swiper('.swiper-container', {
     autoplay: 5000,
     direction: 'horizontal',
+    /* 居中显示 slide */
     centeredSlides: true,
+    /* slides 容器能够同时显示的 slides 数量 */
+    slidesPerView: 'auto',
+    /* 设置 slide 间隔 */
+    spaceBetween: 10,
+    
     onSlideChangeEnd: (swiper) => {
         console.log(swiper.activeIndex);
     }
 });
+
+/* 跳转到第三个卡片 */
+mySwiper.slideTo(2);
+
+/* DOM 更新后刷新 swiper 实例 */
+mySwiper.update();
 
 /* 销毁 swiper 实例 */
 mySwiper.destroy();
