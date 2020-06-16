@@ -26,7 +26,7 @@ Notes for everything.
 1. [Hugo](./docs/hugo/README.md)
 1. [JavaScript](./docs/javascript/README.md)
 1. [Jest](./docs/jest/README.md)
-1. [LaTex](./docs/latex/README.md)
+1. [LaTeX](./docs/latex/README.md)
 1. [Linux](./docs/linux/README.md)
 1. [macOS](./docs/mac/README.md)
 1. [Markdown](./docs/markdown/README.md)

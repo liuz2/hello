@@ -38,8 +38,21 @@ LaTeX 的特性包括：
 1. 包含艺术品、原色和专色（？）
 1. 使用 PostScript 或 Metafont 字体
 
+## 安装 & 使用
+
+如果你是 mac 用户，可以安装 [MacTex][1]。体积大约 4 GB（2020/04/08 的版本）。
+
+如果不想本地安装，可以使用在线服务，比如 [Papeeria][2]，[Overleaf][3]，[Datazar][4] 或 [LaTeX Base][5] 等。
+
 ## 参考资料
 
 1. [Introduction to LaTeX](https://www.latex-project.org/about/)
-1. [Overleaf, Online LaTeX Editor](https://www.overleaf.com/)
+1. [Overleaf, Online LaTeX Editor][3]
 1. [LaTeX Tutorials for Beginners](https://www.bilibili.com/video/av36853649/), bilibili
+1. [一份其实很短的 LaTeX 入门文档](https://liam.page/2014/09/08/latex-introduction/)，作者 *Liam Huang*，2014/09/08
+
+[1]: https://www.tug.org/mactex/ "MacTeX - TeX Users Group"
+[2]: https://papeeria.com/ "Papeeria: online LaTeX editor"
+[3]: https://www.overleaf.com/ "Overleaf"
+[4]: https://www.datazar.com/ "Datazar"
+[5]: https://latexbase.com/ "LaTeX Base"
