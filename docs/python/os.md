@@ -1,6 +1,6 @@
 # OS 模块
 
-这个模块提供了操作系统相关的操作。如果想读写文件，请使用 `open()` 函数；如果想处理路径，请使用 `os.path` 模块；如果想读取命令行的所有文件的全部行文本，请参考 fileinput 模块；如果要创建临时目录或文件，请使用 `tempfile` 模块；对于文件和目录处理的高级处理，请使用 `shutil` 模块。
+这个模块提供了操作系统相关的操作。如果想读写文件，请使用 `open()` 函数；如果想处理路径，请使用 [`os.path`][1] 模块；如果想读取命令行的所有文件的全部行文本，请参考 fileinput 模块；如果要创建临时目录或文件，请使用 `tempfile` 模块；对于文件和目录处理的高级处理，请使用 `shutil` 模块。
 
 >  注意：本模块的所有函数，遇到错误时，会抛出 `OSError` 异常。
 
@@ -90,6 +90,16 @@ Traceback (most recent call last):
 FileExistsError: [Errno 17] File exists: 'hello'
 ```
 
+### rmdir()
+
+删除**空目录**。如果目录不存在、或者非空，将分别抛出 `FileNotFoundError` 或 `OSError` 异常。
+
+```py
+>>> os.rmdir('foobar')
+```
+
+如果目录非空，删除时会报错：`OSError: [Errno 66] Directory not empty: 'foldername'`
+
 ### listdir()
 
 列出当前目录下的文件（含目录）。
@@ -107,16 +117,8 @@ FileExistsError: [Errno 17] File exists: 'hello'
 >>> os.rename('hello', 'world')
 ```
 
-### rmdir()
-
-删除空目录。如果目录不存在、或者非空，将分别抛出 `FileNotFoundError` 或 `OSError` 异常。
-
-```py
->>> os.listdir()
-```
-
-
-
 ## 参考文档
 
 1. [os - 包罗万象的操作系统接口 - Python 3.7.7 文档](https://docs.python.org/3.7/library/os.html)
+
+[1]: ./os.path.md "os.path"
