@@ -59,18 +59,25 @@ now_time
 # datetime.datetime(2020, 6, 18, 23, 0, 0, 417879)
 ```
 
-timedelta
+注意区分与 time 模块的不同：
 
-date
+```py
+import time
 
-datetime.strftime
+time.time()
+# 1592492672.9409091
+```
 
-datetime.strptime
+使用 `help(time.time)` 可以得知：
 
-time
+```
+time(...)
+    time() -> floating point number
 
-datetime.now
+    Return the current time in seconds since the Epoch.
+    Fractions of a second may be present if the system clock provides them.
+```
 
-day
+TODO: 上文中的 Epoch 指的是什么？
 
-days
+另外，`time.sleep(seconds)` 可以让代码暂停一段时间。
