@@ -90,6 +90,15 @@ Traceback (most recent call last):
 FileExistsError: [Errno 17] File exists: 'hello'
 ```
 
+### makedirs()
+
+`makedirs()` 是增强版的 `mkdir()`。它会创建目标文件夹，如果中间路径不存在，则会创建中间路径。见山打洞，遇水架桥，想法设法创建目录。
+
+```py
+my_dir = 'a/b/c'
+os.makedirs(my_dir)
+```
+
 ### rmdir()
 
 删除**空目录**。如果目录不存在、或者非空，将分别抛出 `FileNotFoundError` 或 `OSError` 异常。
