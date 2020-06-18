@@ -78,6 +78,10 @@ time(...)
     Fractions of a second may be present if the system clock provides them.
 ```
 
-TODO: 上文中的 Epoch 指的是什么？
+Epoch 指的是什么？根据 [time 模块][1]文档的解释：
+
+> The epoch is the point where the time starts, and is platform dependent. For Unix, the epoch is January 1, 1970, 00:00:00 (UTC). To find out what the epoch is on a given platform, look at time.gmtime(0).
 
 另外，`time.sleep(seconds)` 可以让代码暂停一段时间。
+
+[1]: https://docs.python.org/3/library/time.html "time module"
