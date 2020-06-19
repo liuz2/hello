@@ -154,6 +154,7 @@ if (username === 'root') {
 1. [Composition API RFC | Vue Composition API][7]
 1. [Vue.js Style Guide][8]
 1. [JetBrains Mono: A free and open source typeface for developers][9]
+1. [Clean Code 读书笔记][10], 作者JobSandCzj，2018/08/03
 
 [1]: https://www.jianshu.com/p/39517a8c66bc "代码可读性提升指南"
 [2]: https://zhuanlan.zhihu.com/p/27974988 "写还是不写注释？"
@@ -164,3 +165,4 @@ if (username === 'root') {
 [7]: https://vue-composition-api-rfc.netlify.app/#code-organization "Composition API RFC | Vue Composition API"
 [8]: https://vuejs.org/v2/style-guide/ "Style Guide - Vue.js"
 [9]: https://www.jetbrains.com/lp/mono/ "JetBrains Mono"
+[10]: https://blog.csdn.net/jobsandczj/article/details/81369970 "clean code 读书笔记"
