@@ -42,6 +42,17 @@ Tony Hoare 托尼·霍尔
 
 当我们在代码中给方法、变量等命名的时候，应该遵循「将信息装入名字 」这一原则。
 
+```js
+// BAD
+let d; // elapsed time in days
+
+// GOOD
+let elapsedTimeInDays;
+let daysSinceCreation;
+let daysSinceModification;
+let fileAgeInDays;
+```
+
 要将信息装入名字就需要我们在命名时选择专业的词，避免空洞、泛泛的词。比如，单字母、tmp、buf 等无意义的词。
 
 当然在循环中惯用的 i, j 等表示索引，可以使用。
@@ -142,6 +153,7 @@ if (username === 'root') {
 1. [Airbnb JavaScript Style Guide][6]
 1. [Composition API RFC | Vue Composition API][7]
 1. [Vue.js Style Guide][8]
+1. [JetBrains Mono: A free and open source typeface for developers][9]
 
 [1]: https://www.jianshu.com/p/39517a8c66bc "代码可读性提升指南"
 [2]: https://zhuanlan.zhihu.com/p/27974988 "写还是不写注释？"
@@ -151,3 +163,4 @@ if (username === 'root') {
 [6]: https://github.com/airbnb/javascript "Airbnb JavaScript Style Guide"
 [7]: https://vue-composition-api-rfc.netlify.app/#code-organization "Composition API RFC | Vue Composition API"
 [8]: https://vuejs.org/v2/style-guide/ "Style Guide - Vue.js"
+[9]: https://www.jetbrains.com/lp/mono/ "JetBrains Mono"
