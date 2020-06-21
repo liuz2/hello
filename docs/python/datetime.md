@@ -1,4 +1,6 @@
-# DateTime 模块
+# dateTime 和 time 模块
+
+## datetime 模块
 
 导入模块：
 
@@ -59,6 +61,89 @@ now_time
 # datetime.datetime(2020, 6, 18, 23, 0, 0, 417879)
 ```
 
+datetime 模块[转换参数表][3]
+
+| 参数 | 含义                            |
+| ---- | ------------------------------- |
+| %A   | 星期的名称，如 Monday           |
+| %B   | 月份名，如January               |
+| %m   | 用数字表示的月份（01-12）       |
+| %d   | 用数字表示月份中的一天（01-31） |
+| %Y   | 四位的年份，如2020              |
+| %y   | 两位的年份，如20                |
+| %H   | 24小时制的小时数（00-23）       |
+| %I   | 12小时制的小时数（01-12）       |
+| %p   | am或pm                          |
+| %M   | 分钟数（00-59）                 |
+| %S   | 秒数（00-59）                   |
+
+自定义日期和时间
+
+```py
+from datetime import datetime, date, time
+
+d = datetime(2020, 10, 30, 14, 5)
+print(d)
+# 2020-10-30 14:05:00
+
+d2 = date(2020, 5, 1)
+print(d2)
+# 2020-05-01
+
+t = time(13, 59, 59)
+print(t)
+# 13:59:59
+```
+
+将字符串转换为 datetime 对象 `strptime()`
+
+```py
+s = '2020-06-21'
+d = datetime.strptime(s, '%Y-%m-%d')
+print(d)
+# 2020-06-21 00:00:00
+
+datetime.strptime('2020-06-21 13:23:59', '%Y-%m-%d %H:%M:%S')
+# datetime.datetime(2020, 6, 21, 13, 23, 59)
+```
+
+datetime 对象转换为字符串 `strftime()`
+
+```py
+now_time = datetime.now()
+print(now_time)
+# 2020-06-21 17:37:02.803543
+s = datetime.strftime(now_time, '%Y/%m/%dT%H:%M:%S')
+print(s)
+# 2020/06/21T17:37:02
+```
+
+datetime 对象之间的加减操作
+
+```py
+from datetime import timedelta
+
+n = datetime.now()
+print(n)
+# 2020-06-21 17:42:22.766981
+
+# 时间的加法
+n_next = n + timedelta(days=5, hours=42)
+print(n_next)
+# 2020-06-28 11:42:22.766981
+
+# 时间的减法
+d2 = datetime(2020, 6, 21)
+d1 = datetime(2019, 1, 7)
+diff = d2 - d1
+type(diff)
+# <class 'datetime.timedelta'>
+diff.days
+# 531
+```
+
+## time 模块
+
 注意区分与 time 模块的不同：
 
 ```py
@@ -84,4 +169,11 @@ Epoch 指的是什么？根据 [time 模块][1]文档的解释：
 
 另外，`time.sleep(seconds)` 可以让代码暂停一段时间。
 
+## 参考资料
+
+1. [datetime module][2]
+1. [time module][1]
+
 [1]: https://docs.python.org/3/library/time.html "time module"
+[2]: https://docs.python.org/3/library/datetime.html "datetime module"
+[3]: https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes "format codes"
