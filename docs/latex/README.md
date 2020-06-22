@@ -10,3 +10,4 @@ LaTeX, a document preparation system.
 1. [LaTeX - A document preparation system](https://www.latex-project.org/)
 1. [LaTeX Documentation - TeXShop](https://pages.uoregon.edu/koch/texshop/documentation.html)
 1. [The Not So Short Introduction to LaTeX2e](https://mirrors.tuna.tsinghua.edu.cn/CTAN/info/lshort/english/lshort.pdf)
+1. [LaTeX in 24 Hours](https://link.springer.com/book/10.1007%2F978-3-319-47831-9), by *Dilip Datta*, 2017
