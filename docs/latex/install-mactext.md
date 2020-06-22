@@ -32,7 +32,10 @@ TeX 本身具有非常原始的输入语言。最简单的 TeX，Knuth 称之为
 
 新的内容可以写在 `\begin{document}` 和 `\end{document}` 之间。写好内容后，可以点击左上角的「排版」，就可以预览文档。
 
-默认对中文支持不好。输入中文，直接编译报错。
+默认对中文支持不好。输入中文，直接编译报错。如何正确显示中文呢？根据 [Kko 的博客][1] 设置如下：
+
+1. 选择 `XeLaTeX`
+2. 在文档头部增加 `\usepackage{ctex}` 即可。
 
 ### 3 TeX 第二步
 
@@ -41,3 +44,6 @@ TODO: 5/8
 ## 参考文档
 
 1. [MacTeX - TeX Users Group](https://www.tug.org/mactex/mactex-download.html)
+1. [在Mac下安装使用支持中文的LaTeX（一）][1]，作者*Kko*，2015/08/02
+
+[1]: https://www.cnblogs.com/kko-liu/p/4696429.html "在Mac下安装使用支持中文的LaTeX（一）"
