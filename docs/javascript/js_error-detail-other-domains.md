@@ -1,4 +1,4 @@
-# Show Detailed Message Error From Other Domains
+# 跨域报错显示详细信息
 
 "Script error" is what browsers send to the onerror callback when an error originates from a JavaScript file served from a different origin.
 
