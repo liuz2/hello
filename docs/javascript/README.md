@@ -24,6 +24,10 @@
 1. [在 Vue 中引入 Swiper 报错怎么办？ ](./swiper-error.md)
 1. [固定吸地按钮的页面有哪些注意事项？](./fixed-footer-button-tips.md)
 
+## Web APIs
+
+1. [Performance](./performance.md)
+
 ## REF
 
 1. [ECMAScript 2019][2]
