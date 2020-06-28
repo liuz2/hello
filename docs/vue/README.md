@@ -14,6 +14,7 @@
 1. [Vue Composition API RFC 是什么？](./vue_composition-api-rfc.md)
 1. [如何理解 Slot?](./slot.md)
 1. [什么是 Vite?](./vite.md)
+1. [mpvue 使用指南](./mpvue-usage.md)
 
 ## REF
 
