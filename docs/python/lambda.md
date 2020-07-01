@@ -18,4 +18,9 @@ result
 # <map object at 0x7f88c4a10a58>
 list(result)
 # [1, 8, 27, 64, 125, 216]
+
+# 如果 map 函数中传入的列表多于一个，则 map 函数并行执行
+rest = map(lambda x,y:x*10+y, [1, 2, 3], [4, 5, 6])
+print(list(rest))
+# [14, 25, 36]
 ```
