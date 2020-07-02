@@ -125,6 +125,52 @@ token: < 种别码, 属性值 >
 
 ## 4 [语法分析概述](https://www.bilibili.com/video/BV1zW411t7YE?p=4)
 
+**语法分析器**（parser）从词法分析器输出的 token 序列中识别出各类短语，并构造**语法分析树**（parse tree）。
+
+例1：赋值语句的分析树
+
+```c
+position = initial + rate * 60;
+```
+
+token 序列：
+
+```
+position    < id, position >
+=           < = >
+initial     < id, initial >
++           < + >
+rate        < id, rate >
+*           < * >
+60          < num, 60 >
+;           < ; >
+```
+
+> 本节视频 01:06 处，有赋值语句分析树的图形。
+
+例2:变量声明语句的分析树
+
+文法：
+
+```
+<D> -> <T> <IDS>;
+<T> -> int | real | char | bool
+<IDS> -> id | <IDS>, id
+```
+
+其中：
+
+1. `D` 表示声明语句 Declaration
+1. `T` 表示类型 Type
+1. `IDS` 表示标识符序列 Identifier Sequence
+1. `|` 表示「或」关系
+
+如果输入 `int a, b, c;` 则它的分析树在本节视频 02:57 处。
+
+如何根据语法规则为输入句子构造语法树？
+
+## 5 [语义分析概述](https://www.bilibili.com/video/BV1zW411t7YE?p=5)
+
 TODO
 
 ## 参考资料
