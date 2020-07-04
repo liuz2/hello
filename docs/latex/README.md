@@ -4,6 +4,7 @@ LaTeX, a document preparation system.
 
 1. [LaTeX 是什么？](./intro.md)
 1. [如何安装 MacTeX?](./install-mactext.md)
+1. [常用的数学符号](./math.md)
 
 ## 参考链接
 
