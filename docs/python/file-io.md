@@ -40,3 +40,25 @@ with open('somefile.txt') as f:
 ```
 
 到达语句末尾时，将自动关闭文件，即使出现异常也是如此。
+
+## 文件的读取
+
+```py
+f = open('test.txt')
+# 读取全部文件
+res = f.read()
+
+# 读取 4 个字符
+res = f.read(4)
+
+# 随机读取
+f.seek(2)
+
+# 读取一行数据
+f.readline()
+
+# 读取所有行，并返回列表
+f.readlines()
+
+f.close()
+```
