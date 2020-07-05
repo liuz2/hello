@@ -1,6 +1,6 @@
 # Compiler
 
-1. [编译原理（哈工大）笔记](./compiler-hit-notes.md)
+1. [编译原理（哈工大）笔记](./compiler-hit-notes/README.md)
 1. [斯坦福大学编译原理笔记](./compiler_stanford-open-notes.md)
 
 ## REF
