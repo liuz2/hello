@@ -62,3 +62,26 @@ f.readlines()
 
 f.close()
 ```
+
+## 文件的写入
+
+使用 `write()` 函数向打开的文件对象写入内容：
+
+```py
+file_name = 'data.txt'
+f = open(file_name, 'w')
+f.write('hello')
+f.write('world')
+f.close()
+```
+
+就会创建一个文件 `data.txt`，其内容为 `helloworld`
+
+使用 `writelines()` 函数写入多行内容：
+
+```py
+file_name = 'data.txt'
+with open(file_name, 'w') as f:
+    l = ['first line\n', 'second line\n', 'third line']
+    f.writelines(l)
+```
