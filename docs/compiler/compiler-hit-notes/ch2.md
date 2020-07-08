@@ -182,4 +182,62 @@ $$E \rightarrow E + E\\E \rightarrow E * E\\E \rightarrow (E)\\E \rightarrow id$
 
 ## 9 [语言的定义](https://www.bilibili.com/video/BV1zW411t7YE?p=9)
 
+自然语言的例子
+
+如果有单词串：`little boy eats apple`，文法规则参照上节的自然语言的定义。那么，如何判定一个词串是否满足文法的句子？
+
+### 推导（Derivations）和归约（Reductions）
+
+给定文法 $G = \{V_T, V_N, P, S\}$，如果 $\alpha \rightarrow \beta \in P$，那么可以将符号串 $\gamma\alpha\delta$ 中的 $\alpha$ **替换**为 $\beta$，也就是说，将 $\gamma\alpha\delta$ **重写**（$rewrite$）为 $\gamma\beta\delta$，记作 $\gamma\alpha\delta \Rightarrow \gamma\beta\delta$。此时，称文法中的符号串 $\gamma\alpha\delta$ **直接推导**（$directly\ derive$）出 $\gamma\beta\delta$
+
+简而言之，就是用产生式的右部替换产生式的左部。
+
+如果 $\alpha_0 \Rightarrow \alpha_1, \alpha_1 \Rightarrow \alpha_2, \alpha_2 \Rightarrow \alpha_3, \dots, \alpha_{n-1} \Rightarrow \alpha_n$，则可以记作 $\alpha_0 \Rightarrow \alpha_1 \Rightarrow \alpha_2 \Rightarrow \alpha_3 \Rightarrow \dots \Rightarrow \alpha_{n-1} \Rightarrow \alpha_n$，称符号串 $\alpha_0$ 经过 $n$ 步推导出 $\alpha_n$，可简记为 $\alpha_0 {\color{red}\Rightarrow^n} \alpha_n$
+
+- $\alpha \Rightarrow^0 \alpha$
+
+- $\Rightarrow^{+}$ 表示“经过正数步推导”
+- $\Rightarrow^{*}$ 表示“经过若干（可以是0）步推导”
+
+视频 03:43 处，有自然语言的推导例子。03:52 显示出归约是推导的逆运算。
+
+回答前面的问题：有了文法（语言规则），如何判定某一词串是否是该语言的句子？
+
+- 句子的推导（派生） --- 从生成语言的角度
+- 句子的归约 --- 从识别语言的角度
+
+无论通过哪种途径，都需要根据规则来识别。
+
+### 句型和句子
+
+如果 $S \Rightarrow^* \alpha, \alpha \in (V_T \cup V_N)^*$，则称 $\alpha$ 是 $G$ 的一个句型（$sentential\ form$）。
+
+一个句型中既可以包含终结符，又可以包含非终结符，也可能是空串。
+
+如果 $S \Rightarrow^* w, w \in V_T^*$，则称 $w$ 是 $G$ 的一个句子（$sentence$）。
+
+句子是**不包含非终结符**的句型。06:29 有句型和句子的举例说明。
+
+### 语言的形式化定义
+
+由文法 $G$ 的开始符号 $S$ 推导出的所有句子构成的集合称为**文法 $G$ 生成的语言**，记作 $L(G)$。即：
+
+$$L(G) = \{w | S \Rightarrow^*w, w \in V_T*\}$$
+
+文法解决了无穷语言的有穷表示问题。
+
+### 语言上的运算
+
+| 运算                 | 定义和表示                                                   |
+| -------------------- | ------------------------------------------------------------ |
+| $L$ 和 $M$ 的并      | $L \cup M = \{s | s \in L\ or\ s \in M\}$                    |
+| $L$ 和 $M$ 的连接    | $LM = \{ st | s \in L\ and\ t \in M\}$                       |
+| $L$ 的幂             | $\begin{cases}L^0 = \{\epsilon\}\\ L^n = L^{n-1}L, n \ge 1\end{cases}$ |
+| $L$ 的 $Kleene$ 闭包 | $L^* = \bigcup_{i=0}^{\infty}L^i$                            |
+| $L$ 的正闭包         | $L^+ = \bigcup_{i=1}^{\infty}L^i$                            |
+
+例：令 $L = \{A, B, \dots, Z, a, b, \dots, z\}, D = \{0, 1, \dots, 9\}$。则 $L(L \cup D)^*$ 表示的语言是**标识符**。
+
+## 10 [文法的分类](https://www.bilibili.com/video/BV1zW411t7YE?p=10)
+
 TODO
