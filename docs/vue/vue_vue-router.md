@@ -488,7 +488,7 @@ const router = new VueRouter({
 
 `routes` 配置的每一项都称作 **路由记录**，路由记录可嵌套。因此，当匹配到一个路由时，可能会对应多个路由记录。
 
-比如，对于 `/foo/bar` 将匹配父路由记录和子路由记录。所有匹配的路由记录都在 `$route。matched` 数组中，因此需要遍历 `$route.matched` 以便检查 meta 字段。
+比如，对于 `/foo/bar` 将匹配父路由记录和子路由记录。所有匹配的路由记录都在 `$route.matched` 数组中，因此需要遍历 `$route.matched` 以便检查 meta 字段。
 
 ```js
 router.beforeEach((to, from, next) => {
@@ -510,5 +510,5 @@ router.beforeEach((to, from, next) => {
 
 ## REF
 
-1. [Vue Router]([https://router.vuejs.org](https://router.vuejs.org/))
+1. [Vue Router](https://router.vuejs.org/)
 1. [Navigation Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html)
