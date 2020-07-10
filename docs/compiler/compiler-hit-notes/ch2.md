@@ -240,4 +240,76 @@ $$L(G) = \{w | S \Rightarrow^*w, w \in V_T*\}$$
 
 ## 10 [文法的分类](https://www.bilibili.com/video/BV1zW411t7YE?p=10)
 
+### Chomsky 文法分类体系
+
+- 0型文法（Type-0 Grammer）
+- 1型文法（Type-1 Grammer）
+- 2型文法（Type-2 Grammer）
+- 3型文法（Type-3 Grammer）
+
+### 0 型文法（Type-0 Grammer）
+
+$\alpha \rightarrow \beta$
+
+无限制文法（$Unrestricted\ Grammer$）或短语结构文法（$Phrase\ Structure\ Grammer, PSG$）
+
+$\forall \alpha \rightarrow \beta\in P$，$\alpha$ 中至少包含1个非终结符。
+
+由0型文法 $G$ 生成的语言 $L(G)$ 称为 **0 型语言**。
+
+### 1型文法（Type-1 Grammer）
+
+$\alpha \rightarrow \beta$
+
+上下文有关文法（$Context-Sensitive\ Grammer, CSG$）
+
+$\forall \alpha \rightarrow \beta \in P, |\alpha| \le |\beta|$
+
+产生式的一般形式：$\alpha_1A\alpha_2 \rightarrow \alpha_1\beta\alpha_2 (\beta \ne\epsilon)$
+
+$CSG$ 中不包含 $\epsilon-$ 产生式（又成空产生式，指产生式的右侧 $\beta$ 是空串 $\epsilon$）
+
+由上下文有关文法（1型文法）$G$ 生成的语言 $L(G)$，叫做上下文有关语言（1型语言）。
+
+### 2型文法（Type-2 Grammer）
+
+$\alpha \rightarrow \beta$
+
+上下文无关文法（$Context-Free\ Grammer, CFG$）
+
+$\forall \alpha \rightarrow \beta\in P, \alpha \in V_N$
+
+产生式一般形式：$A \rightarrow \beta$
+
+由上下文无关文法（2型文法）$G$ 生成的语言 $L(G)$，叫做上下文无关语言（2型语言）。
+
+### 3型文法（Type-3 Grammer）
+
+$\alpha \rightarrow \beta$
+
+正则文法（$Regular\ Grammer, RG$）
+
+- 右线性（$Right\ Linear$）文法：$A \rightarrow wB, or\ A \rightarrow w$
+- 左线性（$Left\ Linear$）文法：$A \rightarrow Bw, or\ A \rightarrow w$
+- 左线性文法和右线性文法都称为正则文法
+
+视频 04:41 有右线性文法的例子。
+
+由正则文法（3型文法）$G$ 生成的语言 $L(G)$ 称作正则语言（3型语言）。正则文法能描述程序设计语言的多数单词。
+
+### 四种文法之间的关系
+
+逐级限制
+
+- 0型文法：$\alpha$ 中至少包含1个非终结符
+- 1型文法（CSG）：$|\alpha| \le |\beta|$
+- 2型文法（CFG）：$\alpha \in V_N$
+- 3型文法（RG）：$A \rightarrow wB,\ or\ A \rightarrow w\quad (A \rightarrow Bw,\ or\ A \rightarrow w)$
+
+逐级包含
+
+0型文法集合包含1型，1型包含2型，2型包含3型
+
+## 11 [CFG 的分析树](https://www.bilibili.com/video/BV1zW411t7YE?p=11)
+
 TODO
