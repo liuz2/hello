@@ -246,7 +246,7 @@ function internal_func(slotProps) {
 这种写法不仅让模版更简洁，还可以重命名属性：
 
 ```xml
-<current-user v-slot="{ user.person }">
+<current-user v-slot="{ user: person }">
     {{ person.firstName }}
 </current-user>
 ```
@@ -259,11 +259,58 @@ function internal_func(slotProps) {
 </current-user>
 ```
 
-> 以下是 v2.6.0- 的内容，不推荐使用
-
 ## 动态插槽名称
 
 > v2.6.0+ 新增内容
+
+`v-slot` 中也可以使用动态指令参数，允许动态插槽名称的定义：
+
+```html
+<base-layout>
+    <template v-slot:[dynamicSlotName]>
+        ...
+    </template>
+</base-layout>
+```
+
+## 命名插槽的简写形式
+
+> v2.6.0+ 新增
+
+同 `v-on` 和 `v-bind` 一样，`v-slot` 同样支持简写，即使用特殊符号 `#` 替换 `v-slot:`。比如，`v-slot:header` 可以简写为 `#header`：
+
+```html
+<base-layout>
+    <template #header>
+        <h1>Here might be a page title</h1>
+    </template>
+
+    <p>A paragraph for the main content</p>
+    <p>And another one.</p>
+
+    <template #footer>
+        <p>Here's some contact info</p>
+    </template>
+</base-layout>
+```
+
+只有参数存在时，才可以简写。因此 `<current-user #="{ user }">` 的写法是错误的。可以改写为：
+
+```html
+<current-user #default="{ user }">
+    {{ user.firstName }}
+</current-user>
+```
+
+## 废弃语法
+
+> 以下是 v2.6.0- 的内容，不推荐使用
+
+### 在命名插槽中使用 `slot` 属性
+
+在 template 或普通元素上使用 `slot` 属性，指定特定的命名插槽。
+
+### 在 Scoped 插槽上使用 `slot-scope` 属性
 
 
 
