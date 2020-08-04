@@ -1,6 +1,6 @@
 # 理解 Slot（插槽）
 
-> 版本 2.6.0（2019年2月4日发布）引入了一个新的统一语法（`v-slot` 指令）。它可以取代 `slot` 和 `slot-scope`。
+> 版本 2.6.0（2019年2月4日发布）引入了一个新的统一语法（`v-slot` 指令）。它可以取代 `slot` 和 `slot-scope`。新语法的逻辑依据在[这个 RFC](https://github.com/vuejs/rfcs/blob/master/active-rfcs/0001-new-slot-syntax.md) 中。
 
 ## 插槽内容
 
@@ -40,13 +40,13 @@
 <navigation-link url="/profile">
     Clicking here will send you to: {{ url }}
     <!--
-	`url` 将是 undefined，因为插槽内容会传送到 `<navigation-link>`，而不是在 `<navigation-link>`
-	组件内定义。
+	`url` 将是 undefined，因为插槽内容会_传送到_ `<navigation-link>`，而不是在 `<navigation-link>`
+	组件内_定义_。
 	-->
 </navigation-link>
 ```
 
-> 记住，父模板的一切变量都会编译到父范围；子模板中的一切都将编译到子范围。
+> 记住，父级模板的所有变量仅在父范围内有效；子模板中的变量仅子模板范围内有效。
 
 ## 后备内容（Fallback Content）
 
