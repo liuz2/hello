@@ -8,6 +8,7 @@
 1. [事件机制简介](./node_events.md)
 1. [TCP 服务器](./tcp-server.md)
 1. [HTTP 服务器](./http-server.md)
+1. [HTTPS 服务器](./https-server.md)
 1. [Design Mistakes in Node](./node_design-mistakes.md), by *Ryan Dahl*, 2018/06
 1. [npm install 有哪些格式？](./npm_install-explained.md)
 1. [如何设置 npm 淘宝镜像？](./npm_taobao_mirror.md)
@@ -19,3 +20,4 @@
 ## 资源列表
 
 1. [Developing with Node.js on Windows](https://docs.microsoft.com/en-us/windows/nodejs/)
+1. [Node.js](https://www.liaoxuefeng.com/wiki/1022910821149312/1023025235359040)，廖雪峰的教程
