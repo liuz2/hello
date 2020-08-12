@@ -16,6 +16,7 @@
 1. [如何解决 Windows 系统无法运行 Node.js 脚本的问题？](./windows-node-run-errors.md)
 1. [html2canvas 的 bug 记录](./html2canvas-bugs.md)
 1. [如何编写一个CLI应用？](./write-cli.md)
+1. [如何调试 Node.js](https://liuz2.gitee.io/posts/debug-nodejs/)
 
 ## 资源列表
 
