@@ -28,6 +28,10 @@
 
 1. [Performance](./performance.md)
 
+## 最佳实践
+
+1. [如何编写一个私有的通用模块？](./bp-private-package.md)
+
 ## REF
 
 1. [ECMAScript 2019][2]
