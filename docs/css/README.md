@@ -11,3 +11,4 @@
 1. [如何隐藏滚动条？](./hide-scrollbar.md)
 1. [如何设定文本溢出效果？](./text-overflow.md)
 1. [动态增删 CSS 链接会导致页面重新渲染吗？](./dynamic-css.md)
+1. [如何设置 placeholder 的样式？](./placeholder.md)
