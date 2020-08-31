@@ -24,6 +24,10 @@
 1. [在 Vue 中引入 Swiper 报错怎么办？ ](./swiper-error.md)
 1. [固定吸地按钮的页面有哪些注意事项？](./fixed-footer-button-tips.md)
 
+## DOM
+
+1. [DOM 有哪些只读属性？](./dom-readonly-properties.md)
+
 ## Web APIs
 
 1. [Performance](./performance.md)
