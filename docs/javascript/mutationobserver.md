@@ -1,6 +1,6 @@
 # MutationObserver
 
-`MutationObserver` 接口提供了监听 DOM 树改动的能力。它用来替换较早的 [Mutation Events](https://developer.mozilla.org/en-US/docs/DOM/Mutation_events) 事件。
+`MutationObserver` 接口提供了监听 DOM 树改动的能力。它用来替换较早的 [Mutation Events](https://developer.mozilla.org/en-US/docs/DOM/Mutation_events) 事件。*Paul Kinlan* 在[文章][4]中表示，Mutation Events 由于性能不佳而被淘汰。
 
 `MutationObserver` 的[兼容性][1]截止到 2020-09-02 是 97.35%
 
@@ -65,6 +65,10 @@ observer.observe(targetNode, observerOptions);
 
 如果想停止监视，可以使用 `disconnect()` 函数。
 
+## 应用实例
+
+[Vue.nextTick][6] 用到了 MutationObserver.
+
 ## 参考文档
 
 1. [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver), MDN
@@ -73,8 +77,12 @@ observer.observe(targetNode, observerOptions);
 1. [MutationRecord][2]
 1. [MutationObserver.observe()][3]
 1. [Detect DOM changes with Mutation Observers][4], by *Paul Kinlan*, 2012/02
+1. [DOM MutationObserver - reacting to DOM changes without killing browser performance][5], by *Jeff Griffiths*, 2012/05/10, hacks.mozilla.org
+1. [Vue.nextTick 的源码实现][6], by *chenjsh36*
 
 [1]: https://caniuse.com/#search=MutationObserver "Can I use MutationObserver?"
 [2]: https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord "MutationRecord"
 [3]: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe "MutationObserver.observe()"
 [4]: https://developers.google.cn/web/updates/2012/02/Detect-DOM-changes-with-Mutation-Observers "Detect DOM changes with Mutation Observers"
+[5]: https://hacks.mozilla.org/2012/05/dom-mutationobserver-reacting-to-dom-changes-without-killing-browser-performance/ "DOM MutationObserver - reacting to DOM changes without killing browser performance"
+[6]: https://github.com/chenjsh36/NotesOfVue/blob/master/Vue_8.md "nextTick 的源码实现"
