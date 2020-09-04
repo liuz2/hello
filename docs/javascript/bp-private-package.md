@@ -1,5 +1,7 @@
 # 编写私有的通用模块
 
+## 避免引入 `node_modules`
+
 首先，增加 `.gitignore` 配置文件，避免 `node_modules/` 导致的体积暴增。
 
 ```
@@ -72,6 +74,37 @@ module.exports = {
 ```sh
 $ git tag v0.0.2
 $ git push origin v0.0.2
+```
+
+## 增加类型文件
+
+为了在 VSCode 中有更智能的自动提示，可以增加类型文件。
+
+新建 `types/index.d.ts` 文件，内容如下：
+
+```ts
+/**
+* init project
+*/
+export function init(name: string, msg: string):void;
+
+/**
+* get string representation
+*/
+export function toString(): string;
+```
+
+更新 `package.json`，增加 `types` 字段和 `files` 字段：
+
+```json
+{
+    "types": "types/index.d.ts",
+    "files": [
+        "dist/*.js",
+        "src",
+        "types/*.d.ts"
+    ]
+}
 ```
 
 ## 使用
