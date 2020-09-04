@@ -29,7 +29,41 @@ const observer = new MutationObserver(callback);
 1. `attributeNamespace: string`
 1. `oldValue: string`
 
-## TODO 实例方法
+`callback` 实例如下：
+
+```js
+function callback(mutationList, observer) {
+    mutationList.forEach((mutation) => {
+        switch(mutation.type) {
+            case 'childList':
+            // one or more children have been added to and/or removed from the tree
+            break;
+
+            case 'attributes':
+            // attribute value changed on the element
+            break;
+        }
+    })
+}
+```
+
+## 创建并开启监视
+
+`MutationObserver` 的方法 `observe()` 可以开启监视。
+
+```js
+const targetNode = document.querySelector('#someElement');
+const observerOptions = {
+    childList: true,
+    attributes: true,
+    subtree: true,
+}
+
+const observer = new MutationObserver(callback);
+observer.observe(targetNode, observerOptions);
+```
+
+如果想停止监视，可以使用 `disconnect()` 函数。
 
 ## 参考文档
 
@@ -37,6 +71,10 @@ const observer = new MutationObserver(callback);
 1. [MutationObserver.MutationObserver()](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/MutationObserver), MDN
 1. [Can I use MutationObserver?][1], caniuse.com
 1. [MutationRecord][2]
+1. [MutationObserver.observe()][3]
+1. [Detect DOM changes with Mutation Observers][4], by *Paul Kinlan*, 2012/02
 
 [1]: https://caniuse.com/#search=MutationObserver "Can I use MutationObserver?"
 [2]: https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord "MutationRecord"
+[3]: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe "MutationObserver.observe()"
+[4]: https://developers.google.cn/web/updates/2012/02/Detect-DOM-changes-with-Mutation-Observers "Detect DOM changes with Mutation Observers"
