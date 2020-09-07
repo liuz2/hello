@@ -6,6 +6,14 @@
 
 cURL 的主要作者是 *Daniel Stenberg*，他编写了《[Everything curl][2]》- 一本详尽且免费的开源书。在线阅读地址：[点击阅读][4]。
 
+以下是常见的一些任务：
+
+下载文件，以远程的文件名保存到本地：
+
+```sh
+$ curl -O http://example.com/a.jpg
+```
+
 [1]: https://curl.haxx.se/
 [2]: https://curl.haxx.se/book.html
 [3]: https://github.com/curl/curl
