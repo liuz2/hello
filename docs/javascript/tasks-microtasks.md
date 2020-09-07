@@ -38,6 +38,35 @@ setTimeout
 
 微任务则更轻量，它会在当前任务执行末期执行。微任务包括 mutation observer callbacks, promise callbacks 等。
 
+## Level 1 bossfight
+
+具体代码参见 [Here](./tasks-microtasks-demo.html)。
+
+Dispatching the `click` event is a task. Mutation observer and promise callbacks are queued as microtasks. The `setTimeout` callback is queued as a task.
+
+## Level 1 boss's angry older brother
+
+Using the same example from above, what happens if we execute:
+
+```js
+inner.click();
+```
+
+Why is it different?
+
+需要仔细比较两次执行流程。
+
+We don't process the microtask queue between listener callbacks, they're processed after both listeners.
+
+## Summary
+
+- Tasks execute in order, and the browser may render between them
+- Microtasks execute in order, and are executed:
+    - after every callback, as long as no other JavaScript is mid-execution
+    - at the end of each task
+
+> The interactive demo by *Jake Archibald* is awesome!
+
 ## REF
 
 1. [Tasks, microtasks, queues and schedules][1], by *Jake Archibald*, 2015/08/17

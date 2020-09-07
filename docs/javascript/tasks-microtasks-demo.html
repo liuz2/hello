@@ -1,10 +1,56 @@
 <html>
     <head>
         <title>Microtask Demo</title>
+        <style>
+            .outer {
+                background: steelblue;
+                padding: 20px;
+            }
+
+            .inner {
+                background: gold;
+                padding: 20px;
+            }
+        </style>
     </head>
 
     <body>
         <h1>Task vs. Microtask</h1>
         <p>From https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/ Level 1 bossfight</p>
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+        <script>
+            var outer = $('.outer');
+            var inner = $('.inner');
+
+            new MutationObserver(function() {
+                console.log('mutate');
+            }).observe(outer, {
+                attributes: true,
+            });
+
+            function onClick(e) {
+                const currentClassName = e.currentTarget.className;
+                console.log('click ' + currentClassName);
+
+                setTimeout(function() {
+                    console.log('timeout ' + currentClassName);
+                }, 0);
+
+                Promise.resolve().then(function() {
+                    console.log('promise ' + currentClassName);
+                });
+
+                outer.setAttribute('data-random', Math.random());
+            }
+
+            inner.addEventListener('click', onClick);
+            outer.addEventListener('click', onClick);
+
+            function $(el) {
+                return document.querySelector(el);
+            }
+        </script>
     </body>
 </html>
