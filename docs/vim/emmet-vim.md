@@ -25,7 +25,7 @@ Type("\_" is the cursor position):
 html:5_
 ```
 
-Then type `<c-y>,`(<code>Ctrl</code><code>y</code><code>,</code>), and you should see the expanded html.
+Then type `<c-y>,`(<kbd>Ctrl</kbd><kbd>y</kbd><kbd>,</kbd>), and you should see the expanded html.
 
 [More Tutorials][3]
 
