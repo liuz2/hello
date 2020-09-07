@@ -22,6 +22,12 @@ $ curl -O http://example.com/a.jpg
 $ curl -O -L http://example.com/redirect.jpg
 ```
 
+如果要实现**断点续传**，可以使用 `-C` 选项：
+
+```sh
+$ curl -C - -O http://example.com/continue.jpg
+```
+
 [1]: https://curl.haxx.se/
 [2]: https://curl.haxx.se/book.html
 [3]: https://github.com/curl/curl
