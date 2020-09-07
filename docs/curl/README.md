@@ -8,10 +8,18 @@ cURL 的主要作者是 *Daniel Stenberg*，他编写了《[Everything curl][2]�
 
 以下是常见的一些任务：
 
-下载文件，以远程的文件名保存到本地：
+## 下载文件
+
+保留远程文件名
 
 ```sh
 $ curl -O http://example.com/a.jpg
+```
+
+如果远程响应是重定向，则需要增加 `-L` 选项：
+
+```sh
+$ curl -O -L http://example.com/redirect.jpg
 ```
 
 [1]: https://curl.haxx.se/
