@@ -6,3 +6,4 @@
 1. [How to copy in macOS?](./vim_copy-in-mac.md)
 1. [如何在 Vim 中执行命令](./exec-command.md)
 1. [如何在 Vim 中使用 Markdown?](./markdown.md)
+1. [emmet-vim](./emmet-vim.md)
