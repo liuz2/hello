@@ -7,6 +7,8 @@ William Shotts 在 *The Linux Command Line* 一书中说：
 1. [如何查看目录大小？](./shell_disk-usage.md)
 1. [如何使用 cal 查看日历？](./cal.md)
 1. [如何使用 grep?](./grep.md)
+1. [tail](./tail.md)
+1. [awk](./awk.md)
 
 ## REF
 
