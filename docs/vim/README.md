@@ -7,3 +7,4 @@
 1. [如何在 Vim 中执行命令](./exec-command.md)
 1. [如何在 Vim 中使用 Markdown?](./markdown.md)
 1. [emmet-vim](./emmet-vim.md)
+1. [Spell check](./spell.md)

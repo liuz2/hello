@@ -27,6 +27,7 @@
 
 ## Web APIs
 
+1. [GlobalEventHandlers.onerror](./onerror.md)
 1. [Performance](./performance.md)
 1. [MutationObserver](./mutationobserver.md)
 
