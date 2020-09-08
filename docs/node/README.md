@@ -2,6 +2,7 @@
 
 ## Modules
 
+1. [buffer](./buffer.md)
 1. [fs](./fs.md)
 1. [path](./path.md)
 1. [process](./process.md)
