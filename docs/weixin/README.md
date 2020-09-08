@@ -13,6 +13,7 @@
 1. [如何跳转到其他微信小程序？](./weixin_app-jump-mini-program.md)
 1. [特性兼容性表格](./weixin_app-compatible-table.md)
 1. [如何使用订阅消息？](./subscribe-message.md)
+1. [小程序开发工具强制 GIT 提交](./wxapp-git-branch.md)
 
 ## REF
 
