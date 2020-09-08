@@ -55,4 +55,13 @@ $ grep --exclude-dir node_modules -r "bar" foo
 ```sh
 $ grep -C 3 -r "bar" foo
 ```
+## 自定义 oh-my-zsh 的 grep
 
+> 假如，我们想在 grep 中忽略 `node_modules` 目录。
+
+编辑 `~/.oh-my-zsh/lib/grep.zsh`，修改 `VCS_FOLDERS` 变量，新增 `node_modules` 文件夹：
+
+```diff
+- VCS_FOLDERS="{.bzr,CVS,.git,.hg,.svn}"
++ VCS_FOLDERS="{node_modules,.bzr,CVS,.git,.hg,.svn}"
+```
