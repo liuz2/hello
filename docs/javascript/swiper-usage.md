@@ -49,6 +49,65 @@ mySwiper.update();
 mySwiper.destroy();
 ```
 
+## swiper v6.x
+
+在 Swiper 6.x 中，语法有一些变化。
+
+Install from NPM
+
+```sh
+$ npm install swiper
+```
+
+```js
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
+
+const swiper = new Swiper();
+```
+
+By default Swiper exports only core version without additional modules (like Navigation, Pagination, etc.). So you need to import and configure them too:
+
+```js
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay]);
+const swiper = new Swiper(...);
+```
+
+If you want to import Swiper with all modules (bundle) then it should be imported from `swiper/bundle`:
+
+```js
+import Swiper from 'swiper/bundle';
+
+const swiper = new Swiper(...);
+```
+
+Finally, we need to initialize Swiper in JS:
+
+```js
+const mySwiper = new Swiper({
+    direction: 'vertical';
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    scrollbar: {
+        el: '.swiper-scrollbar'
+    },
+
+    autoplay: {
+        delay: 5000,
+    },
+});
+```
+
 ## 参考文献
 
 1. [Swiper 3 中文网](https://3.swiper.com.cn/api/index.html)
