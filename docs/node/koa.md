@@ -326,6 +326,19 @@ The following accessors and alias Response equivalents:
 
 A Koa Request object is an abstraction on top of node's vanilla request object, providing additional functionality that is useful for every day HTTP server development.
 
+### Content Negotiation
+
+Koa's request object includes helpful content negotiation utilities powered by [accepts][6] and [negotiator][7]. These utilities are:
+
+- request.accepts(types)
+- request.acceptsEncodings(types)
+- request.acceptsCharsets(charsets)
+- request.acceptsLanguages(langs)
+
+## Response
+
+RTFM.
+
 ## REF
 
 1. [Koa](https://koajs.com/)
@@ -334,3 +347,5 @@ A Koa Request object is an abstraction on top of node's vanilla request object, 
 [3]: https://github.com/jed/cookies "jed/cookies"
 [4]: https://github.com/jshttp/http-errors "jshttp/http-erros"
 [5]: http://nodejs.org/api/assert.html "assert"
+[6]: http://github.com/expressjs/accepts "expressjs/accepts"
+[7]: https://github.com/federomero/negotiator "federomero/negotiator"
