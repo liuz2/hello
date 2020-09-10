@@ -72,7 +72,7 @@ $ npm init esm --yes
 
 `npm init <initializer>` can be used to set up a new or existing npm package.
 
-initializer in this case is an npm package named `create-<initializer>`, which will be installed by npx, and then have its main bin executed – presumably creating or updating package.json and running any other initialization-related operations.
+`initializer` in this case is an npm package named `create-<initializer>`, which will be installed by npx, and then have its main bin executed – presumably creating or updating package.json and running any other initialization-related operations.
 
 The init command is transformed to a corresponding npx operation as follows:
 
