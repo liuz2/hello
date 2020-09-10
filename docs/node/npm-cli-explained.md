@@ -37,6 +37,51 @@ $ npm bin
 $ npm bin --global
 ```
 
+## npm init
+
+Create a package.json file.
+
+[`create-egg`][3] 用到了这个特性：
+
+> Thanks to `npm init` feature introduced at npm@6.
+
+### SYNOPSIS
+
+```sh
+npm init [--force | -f | --yes | -y | --scope]
+npm init <@scope> (same as `npx <@scope>/create`)
+npm init [<@scope>/]<name> (same as `npx [<@scope>/]create-<name>`)
+```
+
+### EXAMPLES
+
+Create a new React-based project using **create-react-app**:
+
+```sh
+$ npm init react-app ./my-react-app
+```
+
+Create a new **esm**-compatible package using **create-esm**:
+
+```sh
+$ mkdir my-esm-lib && cd my-esm-lib
+$ npm init esm --yes
+```
+
+### DESCRIPTION
+
+`npm init <initializer>` can be used to set up a new or existing npm package.
+
+initializer in this case is an npm package named `create-<initializer>`, which will be installed by npx, and then have its main bin executed – presumably creating or updating package.json and running any other initialization-related operations.
+
+The init command is transformed to a corresponding npx operation as follows:
+
+- `npm init foo` -> `npx create-foo`
+- `npm init @usr/foo` -> `npx @usr/create-foo`
+- `npm init @usr` -> `npx @usr/create`
+
+Any additional options will be passed directly to the command, so `npm init foo --hello` will map to `npx create-foo --hello`.
+
 ## npm-ci
 
 > Install a project with a clean slate
@@ -72,3 +117,7 @@ cache:
 ## 参考文档
 
 1. [npm-ci](https://docs.npmjs.com/cli/ci.html)
+1. [npm-init][2]
+
+[2]: https://docs.npmjs.com/cli/init "npm-init"
+[3]: https://www.npmjs.com/package/create-egg "create-egg"
