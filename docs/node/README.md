@@ -2,11 +2,20 @@
 
 ## Modules
 
+1. [assert](./assert.md)
 1. [buffer](./buffer.md)
+1. [debugger](./debugger.md)
+1. [dns](./dns.md)
+1. [events](./events.md)
 1. [fs](./fs.md)
+1. [http](./http.md)
+1. [https](./https.md)
+1. [net](./net.md)
+1. [os](./os.md)
 1. [path](./path.md)
 1. [process](./process.md)
-1. [debugger](./debugger.md)
+1. [stream](./stream.md)
+1. [zlib](./zlib.md)
 
 ## FAQ
 

@@ -56,6 +56,12 @@ debug> setBreakpoint('mod.js', 22)
 - `scripts`: List all loaded scripts
 - `version`: Display V8's version
 
+## How to debug webpack?
+
+```sh
+$ node --inspect-brk `which webpack` --conifg my.webpack.config.js
+```
+
 ## REF
 
 1. [Debugger](https://nodejs.org/api/debugger.html)
