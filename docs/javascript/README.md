@@ -20,6 +20,7 @@
 1. [ES6 有哪些好用的新增特性？](./es6-tips.md)
 1. [固定吸地按钮的页面有哪些注意事项？](./fixed-footer-button-tips.md)
 1. [Tasks vs. microtasks](./tasks-microtasks.md)
+1. [Object.getOwnPropertyNames()](./object.getownpropertynames.md)
 
 ## DOM
 
