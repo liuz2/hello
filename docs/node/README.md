@@ -6,6 +6,7 @@
 1. [fs](./fs.md)
 1. [path](./path.md)
 1. [process](./process.md)
+1. [debugger](./debugger.md)
 
 ## FAQ
 
