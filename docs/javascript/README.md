@@ -21,6 +21,8 @@
 1. [固定吸地按钮的页面有哪些注意事项？](./fixed-footer-button-tips.md)
 1. [Tasks vs. microtasks](./tasks-microtasks.md)
 1. [Object.getOwnPropertyNames()](./object.getownpropertynames.md)
+1. [Object.keys()](./object.keys.md)
+1. [for...in loop](./for-in.md)
 
 ## DOM
 
