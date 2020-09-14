@@ -9,3 +9,4 @@
 1. [emmet-vim](./emmet-vim.md)
 1. [Spell check](./spell.md)
 1. [Split Window](./split-window.md)
+1. [netrw mode](./netrw.md)
