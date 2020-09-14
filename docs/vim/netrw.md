@@ -5,3 +5,4 @@
 - `-` go up folder
 - `o` split window horizontally
 - `v` split window vertically
+- `I`: toggle the displaying of the banner
