@@ -12,6 +12,23 @@ http.createServer([options][, requestListener])
 
 Return a new instance of `http.Server`
 
+```js
+http.createServer((req, res) => {
+    console.log(req.url);
+    res.end('Hello World');
+}).listen(8000, '127.0.0.1');
+```
+
+其中的 `req` 是 `IncomingMessage` 类型，`res` 是 `ServerResponse` 类型。它们的继承关系如下：
+
+```
+IncomingMessage -> Readable -> Stream -> EventEmitter -> Object
+
+ServerResponse -> OutgoingMessage -> Stream -> EventEmitter -> Object
+```
+
+其中的 `.end()` 方法定义在 `Stream` 中。
+
 ### server.listen([port[, host[, backlog]]][, callback])
 
 - port <number>
