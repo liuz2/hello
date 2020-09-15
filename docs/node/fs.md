@@ -10,6 +10,17 @@ const fs = require('fs');
 
 ## Methods
 
+fs.readFile(path[, options], callback)
+
+Asynchronously reads the entire contents of a file.
+
+```js
+fs.readFile('/etc/passwd', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+})
+```
+
 ```js
 fs.writeFileSync(file, data, options?)
 fs.writeFile(file, data, options?, callback)
