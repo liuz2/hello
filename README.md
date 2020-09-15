@@ -27,6 +27,7 @@ Notes for everything.
 1. [JavaScript](./docs/javascript/README.md)
 1. [Jest](./docs/jest/README.md)
 1. [Kafka](./docs/kafka/README.md)
+1. [K8s](./docs/k8s/README.md)
 1. [LaTeX](./docs/latex/README.md)
 1. [Linux](./docs/linux/README.md)
 1. [macOS](./docs/mac/README.md)
