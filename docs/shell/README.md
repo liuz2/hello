@@ -24,6 +24,7 @@ $ chmod u+x app.js
 1. [ab](./ab.md)
 1. [awk](./awk.md)
 1. [cal](./cal.md)
+1. [cron](./cron.md)
 1. [df & du](./shell_disk-usage.md)
 1. [grep](./grep.md)
 1. [kill](./kill.md)
