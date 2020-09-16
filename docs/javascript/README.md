@@ -43,6 +43,7 @@
 1. [如何使用 Swiper?](./swiper-usage.md)
 1. [在 Vue 中引入 Swiper 报错怎么办？ ](./swiper-error.md)
 1. [如何使用 axios?](./axios-usage.md)
+1. [Axios Interceptors](./axios-interceptors.md)
 1. [Lottie Tutorial](./js_lottie-tutorial.md)
 
 ## REF
