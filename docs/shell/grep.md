@@ -20,7 +20,7 @@ grep [options] [pattern] [file ...]
 
 `--exclude-dir` 排除特定文件夹
 
-`-i, --ignore-case` 区分大小写
+`-i, --ignore-case`, Perform case insensitive matching. By default, **grep** is case sensitive. 
 
 `-R, -r, --recursive` 递归搜索指定的子目录
 
