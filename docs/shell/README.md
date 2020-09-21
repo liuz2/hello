@@ -30,8 +30,10 @@ $ chmod u+x app.js
 1. [kill](./kill.md)
 1. [ps](./ps.md)
 1. [tail](./tail.md)
+1. [tar](./tar.md)
 
 ## REF
 
 1. [The Linux Command Line](http://www.linuxcommand.org/tlcl.php/), by *William Shotts*
 1. [快乐的 Linux 命令行](http://billie66.github.io/TLCL/)，The Linux Command Line 中文版，by 好奇猫工作室
+1. [50 Most Frequently Used UNIX/Linux Commands (with Examples)](https://www.thegeekstuff.com/2010/11/50-linux-commands/), thegeekstuff.com, by *Ramesh Natarajan*, 2010/11/08
