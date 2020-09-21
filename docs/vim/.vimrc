@@ -11,6 +11,7 @@ set shiftwidth=4
 set expandtab
 set hlsearch
 set incsearch
+set foldmethod=indent
 
 syntax on
 filetype plugin on
