@@ -15,6 +15,7 @@ Return a new instance of `http.Server`
 ```js
 http.createServer((req, res) => {
     console.log(req.url);
+    res.writeHead(200, { 'Content-Type': 'text/html' });
     res.end('Hello World');
 }).listen(8000, '127.0.0.1');
 ```

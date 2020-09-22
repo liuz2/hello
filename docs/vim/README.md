@@ -11,3 +11,5 @@
 1. [Spell check](./spell.md)
 1. [Split Window](./split-window.md)
 1. [netrw mode](./netrw.md)
+1. [vim-plug](./vim-plug.md)
+1. [YouCompleteMe Plugin](./ycm.md)
