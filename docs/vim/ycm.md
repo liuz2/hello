@@ -13,6 +13,12 @@ Plug 'ycm-core/YouCompleteMe', {'do':'./install.py'}
 :source $MYVIMRC | PlugInstall
 ```
 
+需要安装许多的依赖，并且需要 Python 3.6.0+，否则会报错：
+
+```
+YouCompleteMe unavailable: requires Vim compiled with Python (3.6.0+) support.
+```
+
 ## REF
 
 1. [ycm-core/YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
