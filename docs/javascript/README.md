@@ -23,6 +23,7 @@
 1. [Object.getOwnPropertyNames()](./object.getownpropertynames.md)
 1. [Object.keys()](./object.keys.md)
 1. [for...in loop](./for-in.md)
+1. [Reflect](./reflect.md)
 
 ## DOM
 
