@@ -31,3 +31,6 @@ set wildignore+=**/node_modules/**/*.*
 au BufRead,BufNewFile *.wxml set filetype=html
 " Syntax Highlight *.wxss using *.css
 au BufRead,BufNewFile *.wxss set filetype=css
+
+inoremap <c-j> <esc>o
+inoremap <c-k> <esc>O
