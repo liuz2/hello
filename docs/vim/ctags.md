@@ -27,7 +27,7 @@ $ ctags -R
 set tags=tags;
 ```
 
-按 <kbd>Ctrl+]</kdb>，光标会根据标签跳转到函数的定义。按 <kbd>Ctrl+t</kbd> 会返回。
+按 <kbd>Ctrl+]</kbd>，光标会根据标签跳转到函数的定义。按 <kbd>Ctrl+t</kbd> 会返回。
 
 如果出现同名的标签关键字，可以使用 `:tn` 或 `:tp` 切换选中的标签。也可以用 `:ts` 触发一个标签列表菜单。
 
