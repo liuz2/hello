@@ -14,3 +14,4 @@
 1. [netrw mode](./netrw.md)
 1. [vim-plug](./vim-plug.md)
 1. [YouCompleteMe Plugin](./ycm.md)
+1. [ctags](./ctags.md)
