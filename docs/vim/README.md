@@ -15,3 +15,7 @@
 1. [vim-plug](./vim-plug.md)
 1. [YouCompleteMe Plugin](./ycm.md)
 1. [ctags](./ctags.md)
+
+## REF
+
+1. [A guide to setting up Vim for JavaScript development](https://freshman.tech/vim-javascript/), by *Ayo*, 2019/05/06
