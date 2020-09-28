@@ -74,6 +74,14 @@ $ git log --since=2.weeks
 $ git log -S function_name
 ```
 
+如果要修改时间格式，可以使用 `--date` 选项：
+
+```sh
+$ git log --date=format:"%Y-%m-%d %H:%M:%S" --pretty=format:"%ad"
+2020-09-25 12:11:22
+...
+```
+
 ## 参考资料
 
 1. [git-log Documentation](https://www.git-scm.com/docs/git-log)
