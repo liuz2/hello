@@ -12,6 +12,16 @@ $ git log [<options>] [<revision range>] [[--] <path>...]
 $ git log -p -2
 ```
 
+> `-<number>`, `-n <number>`, `--max-count=<number>`: limit the number of commits to output
+
+如果想查看倒序排列的提交历史，可以使用 `--reverse` 选项：
+
+```sh
+$ git log --reverse
+```
+
+> `--reverse`: output the commits chosen to be shown in reverse order. Cannot be combined with **--walk-reflogs**.
+
 如果想查看每次提交的简要信息，可以使用 `--stat` 选项：
 
 ```sh
