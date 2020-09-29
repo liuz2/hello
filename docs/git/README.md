@@ -8,6 +8,7 @@
 1. [关于 Gerrit](./about-gerrit.md)
 1. [Github 高级用法](./github-protips.md)
 1. [如何使用多账户？](./multi-accounts.md)
+1. [git branch](./git-branch.md)
 1. [git log](./git-log.md)
 1. [Remove Untracked Files](./git-clean.md)
 
