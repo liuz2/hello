@@ -82,6 +82,12 @@ $ git log --date=format:"%Y-%m-%d %H:%M:%S" --pretty=format:"%ad"
 ...
 ```
 
+如果想忽略空格或空行，可以使用 `-b`, `-w`, 或 `--ignore-blank-lines`:
+
+- `-b`, `--ignore-space-change` Ignore changes in amount of whitespace. This ignores whitespace at line end, and considers all other spequences of one or more whitespaces chracters to be equivalent.
+- `-w`, `--ignore-all-space` Ignore whitespace when comparing lines. This ignores differences even if one line has whitespace where the other line has non.
+- `--ignore-blank-line` Ignore changes whose lines are all blank.
+
 ## 参考资料
 
 1. [git-log Documentation](https://www.git-scm.com/docs/git-log)
