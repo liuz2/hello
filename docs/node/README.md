@@ -38,11 +38,13 @@
 1. [如何编写一个CLI应用？](./write-cli.md)
 1. [如何调试 Node.js](https://liuz2.gitee.io/posts/debug-nodejs/)
 
-## Frameworks
+## Frameworks & 3rd party modules
 
 1. [Koa](./koa.md)
 1. [Egg.js](./eggjs/README.md)
 1. [express](./express.md)
+1. [request](./request.md), deprecated
+1. [htmlparser](./htmlparser.md)
 
 ## 资源列表
 
