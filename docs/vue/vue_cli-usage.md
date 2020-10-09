@@ -16,6 +16,15 @@ $ yarn global add @vue/cli
 $ vue create my-project
 ```
 
+查看 webpack 配置项：
+
+```sh
+$ vue inspect
+
+# list all module rule names
+$ vue inspect --rules
+```
+
 ## REF
 
 1. [Vue CLI](https://cli.vuejs.org/)
