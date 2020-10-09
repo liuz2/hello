@@ -15,6 +15,7 @@
 1. [vim-plug](./vim-plug.md)
 1. [YouCompleteMe Plugin](./ycm.md)
 1. [ctags](./ctags.md)
+1. [vimdiff](./vimdiff.md)
 
 ## REF
 
