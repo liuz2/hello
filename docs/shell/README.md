@@ -21,6 +21,7 @@ $ chmod u+x app.js
 
 ## 目录
 
+1. [终端常用快捷键](./keyboard-shortcut.md)
 1. [ab](./ab.md)
 1. [awk](./awk.md)
 1. [cal](./cal.md)
