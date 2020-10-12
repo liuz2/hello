@@ -1,5 +1,7 @@
 # pip
 
+## 常用命令
+
 pip 是一个 Python 包管理工具。常用的命令如下：
 
 ```sh
@@ -8,6 +10,30 @@ $ pip install some-package
 
 # 查看帮助
 $ pip --help
+```
+
+查看安装的文件信息：
+
+```sh
+$ pip show --files SomePackage
+```
+
+展示过期的包：
+
+```sh
+$ pip list --outdated
+```
+
+更新包:
+
+```sh
+$ pip install --upgrade SomePackage
+```
+
+卸载包：
+
+```sh
+$ pip uninstall SomePackage
 ```
 
 ## 更改 pip 源到国内镜像
@@ -36,6 +62,8 @@ $ pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 
 ## 参考资料
 
+1. [pip - The Python Package Installer][2]
 1. [更换 pip 源到国内镜像][1]，作者*JazPd*，2019/03/09
 
 [1]: https://www.cnblogs.com/believepd/p/10499844.html "更换 pip 源到国内镜像"
+[2]: https://pip.pypa.io/en/stable/ "pip - The Python Package Installer"
