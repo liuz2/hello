@@ -55,6 +55,13 @@ $ grep --exclude-dir node_modules -r "bar" foo
 ```sh
 $ grep -C 3 -r "bar" foo
 ```
+
+排除某些文本。比如，排除 `/etc/passwd` 中的注释和包含 `false` 的文本行：
+
+```sh
+$ cat /etc/passwd | grep -v -e false -e "#"
+```
+
 ## 自定义 oh-my-zsh 的 grep
 
 > 假如，我们想在 grep 中忽略 `node_modules` 目录。
