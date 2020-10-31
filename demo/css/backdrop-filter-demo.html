@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>backdrop-filter demo</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .backdrop {
+            position: fixed;
+            z-index: 1024;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(20px);
+        }
+
+        .hidden { display: none; }
+        .tc { text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>backdrop-filter demo</h1>
+    <p>参考文献：<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter">backdrop-filter | MDN</a></p>
+    <div class="tc"><button onclick="onOpen()">Open Modal</button></div>
+    <div class="backdrop tc">
+        <button onclick="onClose()">Close</button>
+    </div>
+
+    <script>
+        function $(el) {
+            return document.querySelector(el);
+        }
+
+        function onOpen() {
+            $('.backdrop').classList.remove('hidden');
+        }
+
+        function onClose() {
+            $('.backdrop').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
