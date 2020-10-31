@@ -8,6 +8,8 @@ backdrop-filter: none;
 backdrop-filter: blur(20px);
 ```
 
+Let's look at a simple [demo](../../demo/css/backdrop-filter-demo.html).
+
 ## REF
 
 1. [backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter), MDN
