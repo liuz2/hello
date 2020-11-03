@@ -13,6 +13,7 @@
 1. [git branch](./git-branch.md)
 1. [git log](./git-log.md)
 1. [Remove Untracked Files](./git-clean.md)
+1. [git tag](./tag.md)
 
 ## 参考资料
 
