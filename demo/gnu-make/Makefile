@@ -1,3 +1,3 @@
-var-kept:
-	export foo=bar; \
-	echo "foo=[$$foo]"
+test:
+	@# This is a test
+	@echo "Hello world"
