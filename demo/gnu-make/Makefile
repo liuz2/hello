@@ -1,3 +1,5 @@
-txt = Hello World
-test:
-	@echo $(txt)
+dest/%.txt: src/%.txt
+	@[ -d dest ] || mkdir dest
+	cp $< $@
+clean:
+	rm dest/*.txt
