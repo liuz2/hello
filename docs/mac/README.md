@@ -7,3 +7,4 @@
 1. [升级 iOS14](./upgrade-ios14.md)
 1. [如何将 word 格式转换为 html 文档？](./transform-word-to-html.md)
 1. [Apple Beta Software Program](./beta-program.md)
+1. [keyboard shortcuts in Numbers](./numbers-shortcut.md)
