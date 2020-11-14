@@ -35,12 +35,62 @@ $ docker run hello-world
 
 从官网下载 Docker.dmg，双击安装即可。
 
-检查版本
+After you’ve successfully installed Docker Desktop, open a terminal and run `docker --version` to check the version of Docker installed on your machine.
 
 ```sh
 $ docker --version
-$ docker-compose --version
-$ docker-machine --version
+Docker version 18.09.0, build 4d60db4
+```
+
+为了验证是否安装正确，可以运行 hello-world 实例：
+
+```sh
+$ docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://cloud.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/engine/userguide/
+```
+
+尝试运行 ubuntu
+
+```sh
+$ docker run -it ubuntu bash
+```
+
+Run `docker image ls` to list the `hello-world` image that you download to your machine.
+
+```sh
+$ docker image ls
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              f2a91732366c        2 years ago         1.85kB
+```
+
+List the `hello-world` container (spawned by the image) which exits after displaying its message. If it is still running, you do not need the `--all` option:
+
+```sh
+$ docker ps --all
+
+    CONTAINER ID     IMAGE           COMMAND      CREATED            STATUS
+    54f4984ed6a8     hello-world     "/hello"     20 seconds ago     Exited (0) 19 seconds ago
 ```
 
 尝试运行 Nginx 服务器：
@@ -71,3 +121,7 @@ $ docker info
 Registry Mirrors:
   https://registry.docker-cn.com/
 ```
+
+## REF
+
+1. [Orientation and setup](https://docs.docker.com/get-started/)
