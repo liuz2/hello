@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>A Long Name Trick</title>
+    <style>
+        .flex { display: flex; }
+        .flex-1 { flex: 1; }
+        .container { padding: 10px 15px; }
+        .username {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .mt { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+            <span>Avatar</span>
+            <span class="username">UserName</span>
+            <span class="flex-1">Suffix</span>
+        </div>
+        <div class="flex mt">
+            <span>Avatar</span>
+            <span class="username">UserName UserName UserName UserName UserName UserName</span>
+            <span class="flex-1">Suffix</span>
+        </div>
+    </div>
+</body>
+</html>
