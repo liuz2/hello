@@ -14,6 +14,8 @@ Docker 镜像是一个特殊的文件系统，除了提供容器运行时所需�
 
 ## 容器
 
+Fundamentally, a container is nothing but a running process, with some added encapsulation features applied to it in order to keep it isolated from the host and from other containers. One of the most important aspects of container isolation is that each container interacts with its own private filesystem; this filesystem is provided by a Docker **image**. An image includes everything needed to run an application - the code or binary, runtimes, dependencies, and any other filesystem objects required.
+
 镜像和容器的关系，就像类和实例一样。镜像是静态定义，容器是鲜活实例。
 
 容器的实质是进程，运行在属于自己的独立命名空间。
@@ -41,3 +43,18 @@ Docker Registry 提供了存储、分发镜像的服务，正如 npm registry �
 | 道客网络 | [DaoCloud Hub](https://hub.daocloud.io/)                     |
 
 除了使用公开服务，用户可以在本地搭建私有 Docker Registry。官方提供了 Docker Registry 镜像，可以直接使用作为私有 Registry 服务。
+
+## Containers and virtual machines
+
+<div>
+    <img src="img/Container@2x.png" alt="Container" style="width:250px;">
+    <img src="img/VM@2x.png" alt="VM" style="width: 250px;">
+</div>
+
+A container runs natively on Linux and shares the kernel of the host machine with other containers. It runs a discrete process, taking no more memory than any other executable, making it lightweight.
+
+By contrast, a **virtual machine** (VM) runs a full-blown "guest" operating system with virtual access to host resources through a hypervisor. In general, VMs incur a lot of overhead beyond what is being consumed by your application logic.
+
+## REF
+
+1. [Orientation and setup](https://docs.docker.com/get-started/)

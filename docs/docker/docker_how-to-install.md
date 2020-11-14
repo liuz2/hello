@@ -26,11 +26,14 @@ $ docker run hello-world
 
 ## macOS
 
-[Docker for Mac](https://docs.docker.com/docker-for-mac/) 要求系统最低为 macOS 10.10.3 Yosemite。否则，可以安装 [Docker Toolbox](https://docs.docker.com/toolbox/overview/)。
+[Docker for Mac](https://docs.docker.com/docker-for-mac/) 要求的系统配置如下：
 
-```sh
-$ brew cask install docker
-```
+1. Mac hardware must be a 2010 or a newer model.
+1. macOS must be version 10.14 or newer.
+1. At least 4GB of RAM.
+1. VirtualBox prior to version 4.3.30 must not be installed as it is not compatible with Docker Desktop.
+
+从官网下载 Docker.dmg，双击安装即可。
 
 检查版本
 
