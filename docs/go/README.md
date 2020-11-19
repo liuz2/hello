@@ -9,6 +9,7 @@
 1. [常见的转换字符](./go_conversion-characters.md)
 1. [如何查找重复的输入行？](./go_dup.md)
 1. [如何读取文件内容？](./go_read-file.md)
+1. [Managing Go Installations](manage-install.md)
 
 ## REF
 
