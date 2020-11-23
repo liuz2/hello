@@ -34,3 +34,8 @@ au BufRead,BufNewFile *.wxss set filetype=css
 
 inoremap <c-j> <esc>o
 inoremap <c-k> <esc>O
+
+" Load all packages
+packloadall
+" Load help documentation for all packages
+silent! helptags ALL
