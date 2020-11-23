@@ -17,6 +17,7 @@
 1. [YouCompleteMe Plugin](./ycm.md)
 1. [ctags](./ctags.md)
 1. [vimdiff](./vimdiff.md)
+1. [NERDTree](./nerdtree.md)
 
 ## REF
 
