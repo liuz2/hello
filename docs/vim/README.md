@@ -18,6 +18,7 @@
 1. [ctags](./ctags.md)
 1. [vimdiff](./vimdiff.md)
 1. [NERDTree](./nerdtree.md)
+1. [vim-go](./vim-go.md)
 
 ## REF
 
