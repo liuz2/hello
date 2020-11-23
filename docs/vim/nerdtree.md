@@ -24,6 +24,13 @@ map <F2> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 ```
 
+## Create a new file or directory
+
+1. Press `m` to bring up the NERDTree Filesystem Menu.
+2. Type `a` to add a child node and then simply enter the filename.
+3. To create a directory follow the same steps but append a `/` to the filename.
+ 
 ## REF
 
 1. [preservim/nerdtree](https://github.com/preservim/nerdtree)
+1. [Creating a new file or directory in Vim using NERDTree](https://sookocheff.com/post/vim/creating-a-new-file-or-directoryin-vim-using-nerdtree/), by *Kevin Sookocheff*, 2013/04/19
