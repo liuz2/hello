@@ -33,3 +33,4 @@ $ find ~ -empty
 ## REF
 
 1. [15 Practical Linux Find Command Examples](https://www.thegeekstuff.com/2009/03/15-practical-linux-find-command-examples/)
+1. [Find command Exclude or Ignore Files](https://www.cyberciti.biz/faq/find-command-exclude-ignore-files/), by *Vivek Gite*, 2020/08/16
