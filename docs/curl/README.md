@@ -28,6 +28,22 @@ $ curl -O -L http://example.com/redirect.jpg
 $ curl -C - -O http://example.com/continue.jpg
 ```
 
+`-f, --fail`: (HTTP) Fail silently (no output at all) on server errors. This is mostly done to better enable scripts etc to better deal with failed attempts.
+
+`-o, --output <file>`: Write output to `<file>` instead of stdout. If you are using `{}` or `[]` to fetch multiple documents, you can use `#` followed by a number in the `<file>` specifier. That variable will be replaced with the current string for the URL being fetched. Like in:
+
+```
+curl http://{one,two}.example.com -o "file_#1.txt"
+```
+
+or use several like:
+
+```
+curl http://{site,host}.host[1-5].com -o "#1_#2"
+```
+
+`--create-dirs`: When used in conjunction with the `-o, --output` option, curl will create the necessary local directory hierarchy as needed. This option creates the dirs mentioned with the `-o, --output` option, nothing else.
+
 [1]: https://curl.haxx.se/
 [2]: https://curl.haxx.se/book.html
 [3]: https://github.com/curl/curl
