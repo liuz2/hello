@@ -28,9 +28,9 @@ set suffixesadd+=.js,.vue,.less,.css,.md,.html
 set wildignore+=**/node_modules/**/*.*
 
 " Syntax Highlight *.wxml using *.html
-au BufRead,BufNewFile *.wxml set filetype=html
+autocmd BufRead,BufNewFile *.wxml set filetype=html
 " Syntax Highlight *.wxss using *.css
-au BufRead,BufNewFile *.wxss set filetype=css
+autocmd BufRead,BufNewFile *.wxss set filetype=css
 
 inoremap <c-j> <esc>o
 inoremap <c-k> <esc>O
@@ -39,3 +39,6 @@ inoremap <c-k> <esc>O
 packloadall
 " Load help documentation for all packages
 silent! helptags ALL
+
+set clipboard=unnamed,unnamedplus
+set wildmenu
