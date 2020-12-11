@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>animation on iOS</title>
+    <style>
+        .container {
+            width: 309px;
+            height: 330px;
+            animation: changeBg .5s ease infinite;
+            background-size: 100% 100%;
+            margin: 10px auto;
+        }
+
+        @keyframes changeBg {
+            0% { background-image: url(k1.png); }
+            100% { background-image: url(k2.png); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>    
+    <p>在 iOS 设备上，如果熄屏后再打开页面，则底部的 CSS3 动画就会消失不见。</p>
+</body>
+</html>
