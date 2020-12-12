@@ -1,11 +1,13 @@
 * Emacs: Set Color Theme
 
-`M-x customize-themes` to set a color theme
+~M-x customize-themes~ to set a color theme
 
 ** Set a Color Theme Permanently
 
 To set it permanently, put this in your emacs init file.
 
-(load-theme 'tsdh-light)
+#+BEGIN_SRC emacs-lisp
+(load-theme 'tsdh-dark)
+#+END_SRC
 
-http://ergoemacs.org/emacs/emacs_playing_with_color_theme.html
+[[http://ergoemacs.org/emacs/emacs_playing_with_color_theme.html][Emacs: playing with color theme]]
