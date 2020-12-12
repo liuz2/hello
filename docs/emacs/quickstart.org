@@ -1,0 +1,86 @@
+#+title: The glories of Org
+#+author: A. Org Writer
+* Getting started with Org-mode
+
+** Headlines
+
+Lines that start with an asterisk -*- are headlines.
+
+Any headlines can also become a TODO item.
+
+*** TODO Promulgate Org to the world
+**** TODO Create a quickstart guide
+
+** Markup
+
+To markup text in Org, simply surround it with one or more marker characters. 
+*Bold*, /italic/ and _underline_ are fairly intuitive, and the ability to use
++strikethrough+ is a plus. You can _/*combine*/_ the basic markup in any
+order, however, ~code~ and =verbatim= need to be the *_~inner-most~_* markers
+if they are present since their contents are interpreted =_literally_=.
+
+** Lists
+
+Unordered lists start with ~+~, ~-~, or ~*~. Ordered lists start with ~1.~, ~1)~, ~A.~, or ~A)~. Ordered and 
+unordered bullets can be nested in any order.
+
+To buy:
+
+1. Milk
+2. Eggs
+   - Organic
+3. Cheese
+   + Parmesan
+   + Mozzarella
+
+Lists can contain checkboxes
+
+- [ ] not started
+- [-] in progress
+- [X] complete
+
+Lists can contain tags and checkboxes at the same time
+
+- [ ] fruits :: get apples
+- [X] veggies :: get carrots    
+
+** Links
+
+To create a link put the target between two square brackets.
+
+You can include a description in square brackets after the target [[baidu.com][baidu]]
+
+** Images
+
+[[https://orgmode.org/resources/img/org-mode-unicorn.svg]]
+
+[[https://pics0.baidu.com/feed/342ac65c103853435061f02828b40a79cb8088b8.jpeg?token=567cdf59c3ad0cb0a0f4f39b8aaaaae8]]
+
+** Blocks
+
+#+BEGIN_EXAMPLE
+monospace
+#+END_EXAMPLE
+
+#+BEGIN_SRC emacs-lisp
+(message "Hello world")
+#+END_SRC
+
+** Tables
+
+| I    | am  | a    | table |
+| with | two | rows | !     |
+
+** Comments
+
+Line comments start with ~#~
+
+# I am a comment
+
+I am a inline comment @@comment: like so@@.
+
+
+
+** References
+
+[[https://orgmode.org/quickstart.html]]
