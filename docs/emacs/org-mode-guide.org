@@ -1,0 +1,87 @@
+#+author: Liu Zhuan
+#+date: 2020-12-13
+
+* Org Mode Compact Guide
+
+** Document Structure
+
+*** Headlines
+
+Use ~*~ to denote headings
+
+*** Visibility Cycling
+
+Use ~Tab~.
+
+*** Motion
+
+#+begin_example
+C-c C-n Next heading
+C-c C-p Previous heading
+C-c C-f Next heading same level
+C-c C-b Previous heading same level
+C-c C-u Backward to higher level heading
+#+end_example
+
+*** Structure Editing
+
+#+begin_example
+M-RET
+    Insert new heading with same level as current
+
+M-LEFT
+M_RIGHT
+    Promote or demote current heading by one level
+
+M-UP
+M-DOWN
+    Move the subtree up or down
+
+C-c C-w
+    Refile entry or region to a different location
+
+C-x n s
+C-x n w
+    Narrow buffer to current subtree and widen it again
+#+end_example
+
+
+*** Sparse Trees
+
+An important feature of Org mode is the ability to construct /sparse
+trees/ for selected information in an outline tree, so that the entire
+document is folded as much as possible, but the selected information
+is made visible with the headline structure above it. Just try it out
+and you will see immediately how it works.
+
+~C-c /~ This prompts for an extra key to select a sparse-tree creating
+command.
+
+*** Plain Lists
+
+My favorite scens are (in this order)
+
+1. The attack of the Rohirrim
+2. Eowyn's fight with the witch king
+   + this was already my favorite scene in the book
+   + I really like Miranda Otto.
+Important actors in this film are:
+
++ Elijah Wood :: He plays Frodo
++ Sean Astin :: He plays Sam, Frodo's friend
++ [ ] Hello checkbox
+
+
+
+** Tables
+
+| Name  | Phone | Age |
+|-------+-------+-----|
+| Peter |  1234 |  17 |
+| Anna  |  4321 |  25 |
+
+
+
+** References
+
+[[https://orgmode.org/guide][Org Mode Compact Guide]]
