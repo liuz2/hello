@@ -10,6 +10,7 @@
 1. [如何查找重复的输入行？](./go_dup.md)
 1. [如何读取文件内容？](./go_read-file.md)
 1. [Managing Go Installations](manage-install.md)
+1. [如何查看自带标准库源码？](standard-lib-source.md)
 
 ## REF
 
