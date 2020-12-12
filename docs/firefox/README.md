@@ -4,4 +4,4 @@
 
 ## REF
 
-1. [Firefox Send](https://send.firefox.com/) | 简单、私密的文件分享服务
+1. ~~[Firefox Send](https://send.firefox.com/) | 简单、私密的文件分享服务~~
