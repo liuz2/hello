@@ -48,7 +48,7 @@ Lists can contain tags and checkboxes at the same time
 
 To create a link put the target between two square brackets.
 
-You can include a description in square brackets after the target [[baidu.com][baidu]]
+You can include a description in square brackets after the target [[https://baidu.com][baidu]]
 
 ** Images
 
