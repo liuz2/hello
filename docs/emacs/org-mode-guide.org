@@ -80,8 +80,6 @@ Important actors in this film are:
 | Peter |  1234 |  17 |
 | Anna  |  4321 |  25 |
 
-
-
 ** References
 
 [[https://orgmode.org/guide][Org Mode Compact Guide]]
