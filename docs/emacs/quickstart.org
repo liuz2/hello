@@ -8,7 +8,7 @@ Lines that start with an asterisk -*- are headlines.
 
 Any headlines can also become a TODO item.
 
-*** TODO Promulgate Org to the world
+*** DONE Promulgate Org to the world
 **** TODO Create a quickstart guide
 
 ** Markup

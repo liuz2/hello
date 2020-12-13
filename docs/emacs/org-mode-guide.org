@@ -1,6 +1,6 @@
 #+author: Liu Zhuan
 #+date: 2020-12-13
-
+<<My Target>>
 * Org Mode Compact Guide
 
 ** Document Structure
@@ -79,7 +79,18 @@ Important actors in this film are:
 |-------+-------+-----|
 | Peter |  1234 |  17 |
 | Anna  |  4321 |  25 |
+|-------+-------+-----|
+
+** Hyperlinks
+
+[[https://baidu.com][Baidu~]]
+
+[[My Target]]
+
+** TODO Items
+
+Things need to be done.
 
 ** References
 
-[[https://orgmode.org/guide][Org Mode Compact Guide]]
+   [[https://orgmode.org/guide][Org Mode Compact Guide]]
