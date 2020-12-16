@@ -1,9 +1,12 @@
-# Emacs
+* Emacs
 
-1. [Set Color Theme](./color-theme.org)
-1. [Getting started with Org-mode](./quickstart.org)
-1. [Org Mode Compact Guide](./org-mode-guide.org)
+** Notes
 
-## REF
+1. [[./color-theme.org][Set Color Theme]]
+1. [[./quickstart.org][Getting started with Org-mode]]
+1. [[./org-mode-guide.org][Org Mode Compact Guide]]
 
-1. [Org mode for Emacs](https://orgmode.org/), Your life in plain text
+** REF
+
+1. [[https://orgmode.org][Org mode for Emacs]], Your life in plain text
+2. [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide][Master Emacs in One Year]], by /redguardtoo/
