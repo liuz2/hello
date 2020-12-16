@@ -5,6 +5,7 @@
 1. [[./color-theme.org][Set Color Theme]]
 1. [[./quickstart.org][Getting started with Org-mode]]
 1. [[./org-mode-guide.org][Org Mode Compact Guide]]
+1. [[./calendar.org][Calendar Mode]]
 
 ** REF
 
