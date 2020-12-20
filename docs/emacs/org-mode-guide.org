@@ -73,34 +73,49 @@ M-x org-indent-mode RET
 | C-x n s | 将缓冲区收缩到当前子树 org-narrow-to-subtree |
 | C-x n w | 将缓冲区扩大到原始状态 widen                 |
 
-** Sparse Trees
+** 稀疏树
 
- An important feature of Org mode is the ability to construct /sparse
- trees/ for selected information in an outline tree, so that the entire
- document is folded as much as possible, but the selected information
- is made visible with the headline structure above it. Just try it out
- and you will see immediately how it works.
+Org 模式的一个重要特性是在大纲层级树中，为选中的信息构建*稀疏树*。无论整个文档如何折叠，选中的信息始终可见。
 
- ~C-c /~ This prompts for an extra key to select a sparse-tree creating
- command.
+Org 有一些创建这种树的快捷键，都需要通过调度器（dispatcher）来获取。
 
-** Plain Lists
+| 快捷键  | 说明                                 |
+|---------+--------------------------------------|
+| C-c /   | 触发弹窗，选择稀疏树 org-sparse-tree |
+| C-c / r | 使用正则表达式选择稀疏树             |
 
-My favorite scens are (in this order)
+** 普通列表
 
-1. The attack of the Rohirrim
-2. Eowyn's fight with the witch king
-   + this was already my favorite scene in the book
-   + I really like Miranda Otto.
-Important actors in this film are:
+Org 理解有序列表，无序列表和描述列表
 
-+ Elijah Wood :: He plays Frodo
-+ Sean Astin :: He plays Sam, Frodo's friend
-+ [ ] Hello checkbox
+- 无序列表的条目以 ~-~, ~+~ 或 ~*~ 开头
+- 有序列表以 ~1.~ 或 ~1)~ 开头
+- 描述列表使用 ~::~ 分隔名词和描述
+
+列表支持以下命令：
+
+| 命令      | 说明                                     |
+|-----------+------------------------------------------|
+| TAB       | 条目可以像标题层级一样被隐藏             |
+| M-RET     | 加入同级条目，使用前缀命令，强制新增标题 |
+| M-S-RET   | 加入新的选择框条目                       |
+| M-S-UP    | 将当前条目及其子条目上移                 |
+| M-S-DOWN  | 将当前条目及其子条目下移                 |
+| M-LEFT    | 减少条目缩进量                           |
+| M-RIGHT   | 增加条目缩进量                           |
+| M-S-LEFT  | 减少条目及其子条目的缩进量               |
+| M-S-RIGHT | 增加条目及其子条目的缩进量               |
+| C-c C-c   | 如果条目有选择框，切换选择框的状态       |
+| C-c -     | 切换整个列表的前缀标识符                 |
 
 
+* Tables
 
-** Tables
+Org 自带一个高效直观的表格编辑器。结合 Emacs Calc 包，还能实现电子表格类似的功能。
+
+表格会在按下 TAB、RET 或 ~C-c C-c~ 时自动对齐，表格的缩进量由第一行决定。
+
+如果要快速插入一个横线，可以使用命令 ~C-c RET~。
 
 | Name  | Phone | Age |
 |-------+-------+-----|
@@ -108,16 +123,59 @@ Important actors in this film are:
 | Anna  |  4321 |  25 |
 |-------+-------+-----|
 
-** Hyperlinks
+常见的命令行如下
 
-[[https://baidu.com][Baidu~]]
+** 创建和转换
 
-[[My Target]]
+| 快捷键 | 说明                   |
+|--------+------------------------|
+| C-c /  | 将活动区域转变为表格。 |
 
-** TODO Items
+** 对齐和字段移动
 
-Things need to be done.
+| 快捷键  | 说明                                                     |
+|---------+----------------------------------------------------------|
+| C-c C-c | 重新对齐表格，光标位置保持不变                           |
+| TAB     | 重新对齐表格，移动到下一个单元格，如果有必要，会创建新行 |
+| S-TAB   | 重新对齐表格，移动到上一个单元格                         |
+| RET     | 重新对齐表格，移动到下一行，如果有必要，会创建新行       |
 
-** References
+** 行列编辑操作
 
-   [[https://orgmode.org/guide][Org Mode Compact Guide]]
+| 快捷键          | 说明                                                           |
+|-----------------+----------------------------------------------------------------|
+| M-LEFT, M-RIGHT | 向左/向右移动当前列                                            |
+| M-UP, M-DOWN    | 向上/向下移动当前行                                            |
+| C-c -           | 在当前行下插入一条横线，如果加上前缀，可以在当前行上面新增横线 |
+| C-c RET         | 在当前行下新增一行                                             |
+| C-c ^           | 排序                                                           |
+|-----------------+----------------------------------------------------------------|
+
+
+* 超链接
+
+Org 提供了像 HTML 一般的超链接，目标地址可以是文件内地址、外部文件、Usenet 文章、电子邮箱等等。
+
+如果要编辑链接地址，可以将光标放到超链接上，然后执行 ~C-c C-l~ 命令(org-insert-link)。
+
+** 内部链接
+
+如果链接地址不像 URL，会被当作当前文件的内部链接。最常见的使用场景比如 =[[#my-custom-id]]= 将链接到 ~CUSTOM_ID~ 为 ~my-custom-id~ 的地方。
+
+** 外部链接
+
+外部链接同 URL 规范类似。
+
+文件链接可以包含更多信息，可以直接跳转到指定的行。比如：
+
+#+BEGIN_SRC 
+file:~/code/main.c::255
+#+END_SRC
+
+** 处理链接
+
+主要的函数是 ~org-store-link~ ，可以使用 ~M-x org-store-link~ 唤起。推荐将其绑定到一个全局快捷键，比如 ~C-c l~ 。
+
+* References
+
+1. [[https://orgmode.org/guide][Org Mode Compact Guide]]
