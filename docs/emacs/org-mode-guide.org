@@ -1,63 +1,90 @@
 #+author: Liu Zhuan
 #+date: 2020-12-13
-<<My Target>>
-* Org Mode Compact Guide
+#+TITLE: Org Mode 简明手册
+#+STARTUP: content
 
-** Document Structure
+* 介绍
 
-*** Headlines
+** 激活
 
-Use ~*~ to denote headings
+将如下代码添加到您的 Emacs 初始化文件，以便定义三个全局快捷键。
 
-*** Visibility Cycling
-
-Use ~Tab~.
-
-*** Motion
-
-#+begin_example
-C-c C-n Next heading
-C-c C-p Previous heading
-C-c C-f Next heading same level
-C-c C-b Previous heading same level
-C-c C-u Backward to higher level heading
-#+end_example
-
-*** Structure Editing
-
-#+begin_example
-M-RET
-    Insert new heading with same level as current
-
-M-LEFT
-M_RIGHT
-    Promote or demote current heading by one level
-
-M-UP
-M-DOWN
-    Move the subtree up or down
-
-C-c C-w
-    Refile entry or region to a different location
-
-C-x n s
-C-x n w
-    Narrow buffer to current subtree and widen it again
-#+end_example
+#+BEGIN_SRC elisp
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c c") 'org-capture)
+#+END_SRC
 
 
-*** Sparse Trees
+* 文档结构
 
-An important feature of Org mode is the ability to construct /sparse
-trees/ for selected information in an outline tree, so that the entire
-document is folded as much as possible, but the selected information
-is made visible with the headline structure above it. Just try it out
-and you will see immediately how it works.
+Org 是一种大纲视图。大纲视图会以层级结构表示文档。Org 使用命令 ~org-cycle~ 显示隐藏大纲层级，此命令与 TAB 键绑定。
 
-~C-c /~ This prompts for an extra key to select a sparse-tree creating
-command.
+** 标题
 
-*** Plain Lists
+标题定义了大纲的树形结构。使用 ~*~ 指定标题。
+
+注意如果标题名称等于 ~org-footnote-section~ 变量值，默认为 ~Footnotes~，那么该标题会被特殊处理。该标题的子树导出时会被忽略。
+
+如果觉得星星太多，影响阅读，可以设置为 Org Indnet 模式。
+
+#+BEGIN_SRC
+M-x org-indent-mode RET
+#+END_SRC
+
+** 视图模式切换
+
+大纲视图下可以隐藏部分内容。Org 使用 ~TAB~ 和 ~S-TAB~ 切换视图模式。
+
+~TAB~ 键可以让当前子树的视图模式在 FOLDED, CHILDREN, SUBTREE 三个状态间循环展示。
+
+~S-TAB~ 可以让全局视图状态在 OVERVIEW, CONTENTS 和 SHOW ALL 三个状态循环显示。
+
+当 Emacs 初次访问某个 Org 文件，全局状态会被设为 OVERVIEW，此时仅显示顶级标题。这种默认行为可以通过变量 ~org-startup-folded~ 设定，
+也可以针对单个文件，增加 ~STARTUP~ 关键字，将其设为 overview, content 或 show。比如：
+
+#+BEGIN_SRC
+#+STARTUP: content
+#+END_SRC
+
+** 移动
+
+以下命令会在当前缓冲区的标题间跳转
+
+| 快捷键  | 说明             |
+|---------+------------------|
+| C-c C-n | 下一个标题       |
+| C-c C-p | 上一个标题       |
+| C-c C-f | 下一个同级标题   |
+| C-c C-b | 上一个同级标题   |
+| C-c C-u | 返回上一层级标题 |
+
+** 结构化编辑
+
+| 快捷键  | 说明                                         |
+|---------+----------------------------------------------|
+| M-RET   | 插入同级标题、列表元素                       |
+| M-S-RET | 插入同级的 TODO 条目标题                     |
+| M-LEFT  | 将当前标题提升一级                           |
+| M-Right | 将当前标题降低一级                           |
+| M-UP    | 将当前子树上移                               |
+| M-DOWN  | 将当前子树下移 org-metadown                  |
+| C-c C-w | 将当前条目或子树移动到别的位置 org-refile    |
+| C-x n s | 将缓冲区收缩到当前子树 org-narrow-to-subtree |
+| C-x n w | 将缓冲区扩大到原始状态 widen                 |
+
+** Sparse Trees
+
+ An important feature of Org mode is the ability to construct /sparse
+ trees/ for selected information in an outline tree, so that the entire
+ document is folded as much as possible, but the selected information
+ is made visible with the headline structure above it. Just try it out
+ and you will see immediately how it works.
+
+ ~C-c /~ This prompts for an extra key to select a sparse-tree creating
+ command.
+
+** Plain Lists
 
 My favorite scens are (in this order)
 
