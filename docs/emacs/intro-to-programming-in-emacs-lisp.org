@@ -1,0 +1,22 @@
+#+TITLE: Emacs Lisp 编程入门
+#+STARTUP: content
+
+* 前言
+
+** 为什么学习 Emacs Lisp?
+
+Emacs Lisp 是一门完备的编程语言，可以做任何事。学会 Emacs Lisp 可以让你走的更远。
+
+** 关于阅读本文
+
+拥有 GNU Emacs，就好似拥有龙的宝藏。Having GNU Emacs is like having a dragon's cave of treasures.
+
+除了将 Emacs 当作编辑器，Emacs Lisp 当作一门编程语言外，案例和代码还会给你个机会，让你将 Emacs 当作 Lisp 编程环境。GNU Emacs 支持编程，
+提供了一些让你感觉舒适的工具，比如 ~M-.~ （这个快捷键会触发
+~xref-find-definitions~ 指令）。
+
+** TODO 本文面对的读者
+
+* 参考文档
+
+1. [[https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html][An Introduction to Programming in Emacs Lisp]], gnu.org
