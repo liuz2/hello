@@ -22,6 +22,8 @@ grep [options] [pattern] [file ...]
 
 `-i, --ignore-case`, Perform case insensitive matching. By default, **grep** is case sensitive. 
 
+`-I` 忽略二进制文件，该选项相当于 `--binary-file=without-match`。
+
 `-R, -r, --recursive` 递归搜索指定的子目录
 
 `-h, --no-filename` 不打印文件名
