@@ -1,0 +1,99 @@
+#+TITLE: Rollup.js 简明教程
+
+* 介绍
+
+** 概述
+
+Rollup 是一个 JavaScript 模块打包器，可以把多个小代码编译为整个复杂代码。它使用标准的 ES6 模块。
+
+** 安装
+
+全局安装为命令行工具
+
+#+BEGIN_SRC shell
+  $ npm install --global rollup
+#+END_SRC
+
+** 快速开始
+
+Rollup 可以使用命令行参数，也可以选用配置文件，甚至还能通过 JavaScript API 调用。可以通过 ~rollup --help~ 查看选项。
+
+我们可以看一个库文件的配置样例 [[https://github.com/rollup/rollup-starter-lib/blob/master/rollup.config.js][rollup-starter-lib]] 
+
+#+BEGIN_SRC javascript
+  import resolve from '@rollup/plugin-node-resolve';
+  import commonjs from '@rollup/plugin-commonjs';
+  import pkg from './package.json';
+
+  export default [
+      // 适合浏览器的 UMD 构建版本
+      {
+	  input: 'src/main.js',
+	  output: {
+	      name: 'howLongUntilLunch',
+	      file: pkg.browser,
+	      format: 'umd'
+	  },
+	  plugins: [
+	      resolve(),
+	      commonjs(),
+	  ]
+      },
+      // CommonJS 和 ES 模块构建版本
+      {
+	  input: 'src/main.js',
+	  external: ['ms'],
+	  output: [
+	      { file: pkg.main, format: 'cjs' },
+	      { file: pkg.module, format: 'es' }
+	  ]
+      }
+  ];
+#+END_SRC
+
+以下命令假定你的入口文件是 ~main.js~ ，打包后的文件是 ~bundle.js~ 。
+
+对于浏览器：
+
+#+BEGIN_SRC shell
+  # 编译为自执行函数 iife
+  rollup main.js --file bundle.js --format iife
+#+END_SRC
+
+对于 Node.js：
+
+#+BEGIN_SRC shell
+  # 编译为 CommonJS 模块
+  rollup main.js --file bundle.js --format cjs
+#+END_SRC
+
+对于浏览器和 Node.js 中两个环境：
+
+#+BEGIN_SRC shell
+  # UMD 格式需要打包名称
+  rollup main.js --file bundle.js --format umd --name "myBundle"
+#+END_SRC
+
+** TODO 为什么
+
+* 命令行界面
+
+* JavaScript API
+
+* ES 模块语法
+
+* 教程
+
+* 插件开发
+
+* 常见问题
+
+* 将 Rollup 与其他工具整合
+
+* 答疑
+
+* 选项列表
+
+* REF
+
+1. [[https://rollupjs.org/guide/en/][rollup.js]] 官网
