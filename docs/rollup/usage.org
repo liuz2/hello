@@ -85,6 +85,30 @@ Rollup 可以使用命令行参数，也可以选用配置文件，甚至还能�
 
 ** TODO 配置文件
 
+Rollup 配置文件就是一个 ES 模块，输出一个默认对象：
+
+#+BEGIN_SRC javascript
+  export default {
+      input: 'src/main.js',
+      output: {
+	  file: 'bundle.js',
+	  format: 'cjs'
+      }
+  };
+#+END_SRC
+
+这个配置文件一般名为 ~rollup.config.js~ 。Rollup 在幕后会把它转译为 CommonJS 然后再引入它。
+
+如果你想在配置文件中使用 CommonJS 语法，即使用 ~require~ 或 ~module.exports~ ，就需要把文件扩展名改为 ~.cjs~ ，这会阻止 Rollup 将其转译。如果使用 Node 13+，将后缀改为 ~.mjs~ ，也可以阻止 Node.js 将其转译，直接当作 ES 模块使用。
+
+如果想异步创建配置文件，可以使用 Promise：
+
+#+BEGIN_SRC javascript
+  // rollup.config.js
+  import fetch from 'node-fetch';
+  export default fetch('./some-remote-service-or-file-which-returns-actual-config');
+#+END_SRC
+
 * JavaScript API
 
 * ES 模块语法
