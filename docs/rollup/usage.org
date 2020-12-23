@@ -74,9 +74,16 @@ Rollup 可以使用命令行参数，也可以选用配置文件，甚至还能�
   rollup main.js --file bundle.js --format umd --name "myBundle"
 #+END_SRC
 
-** TODO 为什么
+** 兼容性
+
+*** 导入 CommonJS
+
+可以使用 [[https://github.com/rollup/plugins/tree/master/packages/commonjs][@rollup/plugin-commonjs]] 插件将 CommonJS 模块转换为 ES6 
+模块，以便 Rollup 打包。
 
 * 命令行界面
+
+** TODO 配置文件
 
 * JavaScript API
 
