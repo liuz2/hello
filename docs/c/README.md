@@ -19,6 +19,7 @@
 1. [外部变量和作用域](./c_external-scope.md)
 1. [数据类型和长度](./c_type-bytes.md)
 1. [获取字符串长度](./c_strlen.md)
+1. [GDB](./gdb.org)
 
 ## REF
 

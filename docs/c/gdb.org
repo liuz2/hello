@@ -1,0 +1,66 @@
+#+TITLE: GDB
+
+* 单步执行和跟踪函数调用
+
+函数调试实例
+
+#+BEGIN_SRC c
+  #include <stdio.h>
+
+  int add_range(int low, int high) {
+    int i, num;
+    for (i = low; i <= high; i++) {
+      sum = sum + i;
+    }
+    return sum;
+  }
+
+  int main(void)
+  {
+    int result[100];
+    result[0] = add_range(1, 10);
+    result[1] = add_range(1, 100);
+    printf("result[0]=%d\nresult[1]=%d\n", result[0], result[1]);
+    return 0;
+  }
+#+END_SRC
+
+编译时需要加上 ~-g~ 选项：
+
+#+BEGIN_SRC shell
+  gcc -g main.c -o main
+  gdb main
+#+END_SRC
+
+由于 macOS 从 GDB 转向了 LLDB，即 LLVM 调试器。如果像使用 GDB，需要自己手动安装，最简单的办法就是使用 homebrew。具体使用步骤见参考资料2。
+
+GDB 的常用命令
+
+| 命令                  | 描述                                               |
+|-----------------------+----------------------------------------------------|
+| list, l               | 列出源代码，每次列 10 行                           |
+| list <function_name>  | 列出函数代码                                       |
+| quit                  | 退出 GDB                                           |
+| start                 | 开始执行程序，停在 main 函数第一行语句前面等待命令 |
+| next, n               | 执行下一条命令                                     |
+| step, s               | 进入函数体执行                                     |
+| backtrace, bt         | 查看函数调用的栈帧                                 |
+| info locals, i locals | 查看局部变量                                       |
+| frame, f              | 选择栈帧                                           |
+| print, p              | 打印变量的值                                       |
+| finish                | 连续运行到当前函数返回为止，然后停下来等待命令     |
+| set var               | 修改变量的值                                       |
+
+* TODO 断点
+
+[[https://akaedu.github.io/book/ch10s02.html][断点]]
+
+* 观察点
+
+* 段错误
+
+* 参考文献
+
+1. [[https://akaedu.github.io/book/ch10.html][第10章 gdb]] Linux C 编程一站式学习，宋劲杉编著
+2. [[https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/mac-gdb-install.html#:~:text=%20GDB%20Installation%20on%20Mac%20OS%20X%20,to%20make%20it%20immediately%20available%20for...%20More%20][GDB Installation on Mac OS X]]
+3. [[https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/gdb_to_lldb_transition_guide/document/lldb-command-examples.html][GDB and LLDB Command Examples]], developer.apple.com
