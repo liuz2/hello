@@ -15,7 +15,21 @@ Emacs Lisp 是一门完备的编程语言，可以做任何事。学会 Emacs Li
 提供了一些让你感觉舒适的工具，比如 ~M-.~ （这个快捷键会触发
 ~xref-find-definitions~ 指令）。
 
-** TODO 本文面对的读者
+** Lisp 历史
+
+1950 年代，Lisp 出现在 MIT 用于研究人工智能。GNU Emacs Lisp 主要受 Maclisp 影响。此外，Common Lisp 也多少影响了 Emacs Lisp。
+
+* List Processing
+
+Lists are the basis of Lisp.
+
+** Lisp Lists
+
+#+BEGIN_SRC elisp
+  '(rose violet daisy buttercup)
+#+END_SRC
+
+In Lisp, both data and programs are represented the same way; this is a very powerful feature of Lisp.
 
 * 参考文档
 
