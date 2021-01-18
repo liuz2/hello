@@ -1,0 +1,51 @@
+#+TITLE: 测量性能
+
+* RAIL 模型
+
+RAIL 是一个以用户为中心的性能模型。RAIL 代表网络应用的四个生命周期：response, animation, idle 和 load。在不同的上下文，用户对于性能的期待是不同的。
+
+[[https://webdev.imgix.net/rail/rail.png]]
+
+** 用户的感知
+
+用户对于性能延迟的感知
+
+| 时间       | 性能说明                                                                           |
+|------------+------------------------------------------------------------------------------------|
+| 0-16ms     | 当每秒60帧时，动画是流畅的。即每帧 16ms。刨除浏览器渲染时间，一帧的时长最多 10ms。 |
+| 0-100ms    | 对于用户的交互反馈，如果小于 100ms，则用户感知不到延迟。                           |
+| 100-1000ms | 在该时间窗口内，用户感知的任务是连续的。加载网页或切换视图就是一项任务。           |
+| 1000ms+    | 超过1秒，用户将失去当前任务的焦点                                                  |
+| 10000ms+   | 超过 10 秒，用户会有挫败感，将放弃当前任务，可能不会再回来                         |
+
+不同的网络环境和硬件下，用户的容忍度是不同的。移动设备的用户可以容忍 5s 的加载速度。
+
+** 目标和建议
+
+1. 将用户交互的反馈，限制在 50ms 之内。
+2. 每个动画帧限制在 10ms 之内。
+3. 尽量扩大空闲时间。一开始尽量少加载数据，接着利用空闲时间加载更多数据。
+4. 从加载到可以交互，尽量限制在 5s 内。
+
+** 测量 RAIL 的工具
+
+1. Chrome DevTools
+2. Lighthouse
+3. WebPageTest
+
+* 性能工具
+
+** 开始
+
+1. 使用无痕模式，防止插件干扰。
+2. 打开 demo 地址：https://googlechrome.github.io/devtools-samples/jank/
+3. 打开开发者工具
+
+** 模拟移动设备 CPU
+
+https://developers.google.cn/web/tools/chrome-devtools/evaluate-performance#simulate_a_mobile_cpu
+
+* REF
+
+1. [[https://developers.google.cn/web/tools/chrome-devtools/evaluate-performance][Get Started With Analyzing Runtime Performance]], by /Kayce Basques/
+2. [[https://web.dev/rail/][Measure performance with the RAIL model]], 2020-06-10
