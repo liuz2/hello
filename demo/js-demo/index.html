@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title></title>
+</head>
+<body>
+    <h1>onclick and addEventListener</h1>
+    <button id="btn">click me</button>
+    <script>
+        const $btn = document.querySelector('#btn');
+        $btn.addEventListener('click', clickHandler1);
+        $btn.addEventListener('click', clickHandler2);
+        $btn.onclick = onclick1;
+        $btn.onclick = onclick2;
+
+        function onclick1(e) {
+            console.log('onclick1, e:', e);
+        }
+
+        function onclick2(e) {
+            console.log('onclick2, e:', e);
+        }
+
+        function clickHandler1(e) {
+            console.log('click handler1, e:', e);
+        }
+
+        function clickHandler2(e) {
+            console.log('click handler2, e:', e);
+        }
+    </script>
+</body>
+</html>
