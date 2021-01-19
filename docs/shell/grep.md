@@ -64,6 +64,12 @@ $ grep -C 3 -r "bar" foo
 $ cat /etc/passwd | grep -v -e false -e "#"
 ```
 
+搜索并打印输出包含 foobar 的文件名
+
+```sh
+$ grep foobar -rl .
+```
+
 ## 自定义 oh-my-zsh 的 grep
 
 > 假如，我们想在 grep 中忽略 `node_modules` 目录。
