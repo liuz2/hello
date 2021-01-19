@@ -1,3 +1,5 @@
+#+TITLE: sed 用法
+
 * sed
 
 ** sed 命令基本用法
@@ -53,7 +55,22 @@ sed 编辑命令
 
 ** sed 编程的一组例子
 
+#+BEGIN_SRC shell
+  # 删除第一行
+  $ sed '1d' ab
 
+  # 删除最后一行
+  $ sed '$d' ab
+
+  # 显示第一行
+  $ sed -n '1p' ab
+
+  # 打印第3到6行
+  $ sed -n '3,6p' input
+
+  # 显示包含关键字 ruby 的行
+  $ sed -n '/ruby/p' ab
+#+END_SRC
 
 * 参考文献
 

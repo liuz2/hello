@@ -32,7 +32,7 @@ $ chmod u+x app.js
 1. [kill](./kill.md)
 1. [man](./man.md)
 1. [ps](./ps.md)
-1. [sed](./sed.md)
+1. [sed](./sed.org)
 1. [tail](./tail.md)
 1. [tar](./tar.md)
 
