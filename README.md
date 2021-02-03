@@ -36,6 +36,7 @@ Notes for everything.
 1. [Mocha](./docs/mocha/README.md)
 1. [Nginx](./docs/nginx/README.md)
 1. [Node](./docs/node/README.md)
+1. [NuxtJS](./docs/nuxtjs/README.org)
 1. [OpenSSL](./docs/openssl/README.md)
 1. [Operating Systems](./docs/os/README.md)
 1. [Python](./docs/python/README.md)

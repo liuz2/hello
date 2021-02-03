@@ -1,0 +1,35 @@
+#+TITLE: NuxtJS
+
+* Why NuxtJS
+
+- modular
+- performant
+- enjoyable
+
+* Get Started
+
+** Installation
+
+*** Prerequisites
+
+- node v10.13+
+- text editor, VS Code with Vetur extension or WebStorm
+- terminal
+
+*** Using create-nuxt-app
+
+#+BEGIN_SRC shell
+  npx create-nuxt-app <project-name>
+#+END_SRC
+
+launch it:
+
+#+BEGIN_SRC shell
+  cd <project-name>
+  npm run dev
+#+END_SRC
+
+* REF
+
+1. [[https://nuxtjs.org/][Nuxt.js - The Intuitive Vue Framework]]
+1. [[https://nuxtjs.org/docs/2.x/get-started/installation][Get Started with NuxtJS]]
