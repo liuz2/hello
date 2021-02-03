@@ -1,0 +1,3 @@
+#+TITLE: printenv
+
+printenv 打印环境变量

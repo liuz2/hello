@@ -31,6 +31,7 @@ $ chmod u+x app.js
 1. [grep](./grep.md)
 1. [kill](./kill.md)
 1. [man](./man.md)
+1. [printenv](./printenv.org)
 1. [ps](./ps.md)
 1. [sed](./sed.org)
 1. [tail](./tail.md)
