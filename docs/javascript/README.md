@@ -38,6 +38,7 @@
 ## 最佳实践
 
 1. [如何编写一个私有的通用模块？](./bp-private-package.md)
+1. [Performance](./performance.org)
 
 ## 第三方库
 

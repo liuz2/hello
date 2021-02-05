@@ -1,0 +1,40 @@
+#+TITLE: Performance
+
+* Why does speed matter?
+
+When consumers weigh the experience on your site, they aren't just comparing you with your competitors, they're rating you against the best-in-class services they use every day.
+
+- Performance is about retaining users
+- Performance is about improving conversions
+- Performance is about user experience
+
+* Measure performance with the RAIL model
+
+** What is RAIL?
+
+RAIL is a user-centric performance model that provides a structure for thinking about performance.
+
+RAIL stands for four distinct aspects of web app life cycle:
+
+1. Response
+2. Animation
+3. Idle
+4. Load
+
+Users have different performance expectations for each of these contexts.
+
+- 0-16ms, smooth animation
+- 0-100ms, immediate response to user action
+- 100-1000ms, a natural and continuous progression of tasks
+- 1000ms or more, lose focus
+- 10000ms or more, frustrated and abandon tasks
+
+** Goals and guidelines
+
+* REF
+
+1. [[https://web.dev/why-speed-matters/][Why does speed matter?]], by /Bojan Pavic/, /Chris Anstey/, /Jeremy Wagner/, 2019-05-01
+1. [[https://web.dev/rail/][Measure performance with the RAIL model]], 2020-06-10
+1. [[https://web.dev/fast/][Fast load times]], Techniques for improving site performance
+1. [[https://web.dev/vitals][Web Vitals]], by /Philip Walton/, 2020-04-30
+1. [[https://developers.google.cn/web/tools/chrome-devtools/evaluate-performance][Get Started With Analyzing Runtime Performance]], by /Kayce Basques/
